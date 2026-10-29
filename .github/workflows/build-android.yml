@@ -1,0 +1,40 @@
+name: Build Tomo for Android
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - name: Generate Android project files
+        run: flutter create --platforms=android --org com.tomo --project-name tomo_mobile .
+      - name: Apply Tomo Android branding
+        run: |
+          sed -i 's/android:label="tomo_mobile"/android:label="Tomo"/' android/app/src/main/AndroidManifest.xml
+          for spec in mdpi:48 hdpi:72 xhdpi:96 xxhdpi:144 xxxhdpi:192; do
+            density="${spec%%:*}"
+            size="${spec##*:}"
+            install -D "assets/launcher-${size}.png" "android/app/src/main/res/mipmap-${density}/ic_launcher.png"
+          done
+          rm -rf android/app/src/main/res/mipmap-anydpi-v26
+      - name: Build installable APK
+        run: flutter build apk --release
+      - name: Save APK for download
+        uses: actions/upload-artifact@v4
+        with:
+          name: tomo-android-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 14
