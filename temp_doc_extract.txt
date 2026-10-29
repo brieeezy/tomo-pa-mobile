@@ -1,0 +1,2440 @@
+
+### TOMO.docx
+120 [Normal] Chapter II
+121 [Normal] Review of Related Literature
+146 [Normal] References
+147 [Normal] Al-Amin, K. O., Ewim, C. P.-M., Igwe, A. N., & Ofodile, O. C. (2024). AI-Driven end-to-end workflow optimization and automation system for SMEs. International Journal of Management & Entrepreneurship Research, 6(11), 3666–3684. https://doi.org/10.51594/ijmer.v6i11.1688
+148 [Normal] Hüsson, D., Holland, A., Fathi, M., & Sánchez, R. A. (2021). Analysis and illustration of the practical impact of Artificial Intelligence and Intelligent Personal Assistants on business processes in small- and medium-sized service enterprises. 2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC), 3303–3310. https://doi.org/10.1109/smc52423.2021.9659298
+149 [Normal] Gao, Y., Xiong, Y., Gao, X., Jia, K., Pan, J., Bi, Y., Dai, Y., Sun, J., Wang, M., & Wang, H. (2023). Retrieval-Augmented Generation for Large Language Models: A Survey. In arXiv.org. https://doi.org/10.48550/arxiv.2312.10997
+150 [Normal] Kaur, P., & Garg, R. (2026). Mitigating hallucinations in large language models through enhanced retrieval-augmented generation: A Framework with FAISS and Lang Chain. Open Access Research Journal of Engineering and Technology. https://doi.org/10.53022/oarjet.2026.10.2.0033
+151 [Normal] Devi, J. A., Anusha, T., Makala, R., Ratnam, P. P., Singh, K., Ganiya, R., & Rao, M. S. (2026). LLaMA-3 Optimized Retrieval-Augmented Chatbot for Dynamic Query Handling and Enterprise Integration. ITEGAM- Journal of Engineering and Technology for Industrial Applications (ITEGAM-JETIA). https://doi.org/10.5935/jetia.v12i59.3547
+152 [Normal] Nethanani, R., matlombe, luzuko, Vuko, S., & Thango, B. (2024). Customer Relationship Management (CRM) Systems and their Impact on SMEs Performance: A Systematic Review. Preprints.Org. https://doi.org/10.20944/preprints202410.1538.v1
+153 [Normal] Black, J., Scheinbaum, A. C., Harrison, D., & Hair, J. F. (2026). How to Keep Them Coming Back: Lessons for SMEs Focused on Growth and Sustainability. Journal of Small Business Strategy. https://doi.org/10.53703/001c.157790
+154 [Normal] Seo, E., & Lee, E. (2024). Linking SMEs’ customer strategy to firm growth: the case of manufacturing suppliers in South Korea. Asia Pacific Journal of Marketing and Logistics, 37(3), 782–799. https://doi.org/10.1108/apjml-03-2024-0313
+155 [Normal] Brobio, P., & Amoguis, M. J. B. (2025). The Adoption of Artificial Intelligence of SMEs in Davao del Norte: A Multiple Case Study in the Modern Business Landscape. Psychology and Education A Multidisciplinary Journal, 51(2), 254–278. https://doi.org/10.70838/pemj.510208
+156 [Normal] Ines, J. C., Tolentino, M. Q., Cruz, J. C. D., Estabillo, R., Madlambayan, A. M., Mirano, C. E., & Vergara, J. A. (2024). The Role of AI in Enhancing Decision-Making in Small and Medium Enterprises (SMEs). 1–4. https://doi.org/10.1109/iccda64887.2024.10867356
+157 [Normal] Sacramed, M. (2026). Artificial Intelligence (AI)-driven entrepreneurial strategies and customer-related performance of SMEs in Sanchez Mira, Cagayan, Philippines: an exploratory mixed-methods case study. Future Business Journal, 12(1). https://doi.org/10.1186/s43093-026-00963-x
+158 [Normal] Cordova, W., Lim, C. T. N., Ong, H. T., Caraan, H. S., Cruz, G. A. R. D., & Jimenez, E. (2025). Digital Innovation and Entrepreneurial Success in the Philippine MSME Sector: Challenges and Opportunities. Economics, 13(3), 69–82. https://doi.org/10.2478/eoik-2025-0056
+159 [Normal] Catapang, J. K., Solano, G. A., & Oco, N. (2020). A Bilingual Chatbot Using Support Vector Classifier On an Automatic Corpus Engine Dataset. 22, 187–192. https://doi.org/10.1109/icaiic48513.2020.9065208
+160 [Normal] Apostol, R. (2025). Impact of Knowledge-Based Help Desk System: Facebook Messenger Chatbot for Student IT Support at Pamantasan ng Lungsod ng Valenzuela. 153–157. https://doi.org/10.1109/icint65528.2025.11030886
+161 [Normal] Velasco, M. N., Acosta, M. L. C., Agao, M. J. T., Rom, S. D., Mingua, A. A. V., Rosero, E. J. L., & Yaoto, A. B. D. (2025). Developing a Retrieval-Augmented Natural Language Interface for Philippine Demographics and Social Statistics. 150–155. https://doi.org/10.1109/r10-htc63995.2025.11393990
+162 [Normal] Rojas, H., Renteria, R., Duran, V. M., Gutierrez, Y., Cabrera, M., & Aminuddin, A. (2025). Mapping the Evolution and Future Directions of ISO/IEC 25010: A Bibliometric and Thematic Analysis. Engineering Technology & Applied Science Research, 15(5), 27530–27541. https://doi.org/10.48084/etasr.11772
+163 [Normal] Lagman, A. C., Ramírez, I., Esteban, A. P., Rivera, R. P. L., dos Santos, R. M., & Juliano, J. (2024). Development and Evaluation of an Enterpriselevel Information System for Digital Governance in Philippine SUCs Using Agile Software Methodology and ISO/IEC 25010 Software Quality Model. 1–6. https://doi.org/10.1109/hnicem64917.2024.11258693
+164 [Normal] Mangulad, F. J. R. (2026). Design and Develop a Students Information Management System for Medical Colleges of Northern Philippines and International School of Asia and the Pacific. AIDE Interdisciplinary Research Journal, 16, 60–74. https://doi.org/10.56648/aide-irj.v16i1.268
+165 [Normal] Pookduang, P., & Chansanam, W. (2026). Bridging ERP Complexity Through Retrieval-Augmented Generation: Design and Evaluation of an Intelligent Question-Answering System for SMEs. Computers, 15(7), 427. https://doi.org/10.3390/computers15070427
+
+### RRL.docx
+000 [Normal] Review of Related Literature
+001 [Normal] This chapter presents a thematic review of related literature and studies that bear on the development of TOMO, a Retrieval-Augmented Generation (RAG) smart personal assistant for Biglang-awa IT Solutions. The review is organized around five themes: (1) AI-driven workflow automation and the operational case for intelligent assistants; (2) Retrieval-Augmented Generation as an architecture for grounded, domain-specific AI; (3) conversational AI and knowledge assistants in Philippine organizations; (4) client acquisition, retention, and service delivery in knowledge-intensive firms; and (5) software quality evaluation under ISO/IEC 25010. Within each theme, local (Philippine) and foreign literature are read side by side, and each theme closes with its implication for the present study. Sources are limited to studies published from 2020 onward, consistent with the recency requirement for capstone research, except for a small number of foundational works on intelligent personal assistants
+002 [Normal] (Han & Yang, 2018)
+003 [Normal] (Hüsson, Holland, & Sánchez, 2020)
+004 [Normal] .
+005 [Normal] Theme 1: AI-Driven Workflow Automation and the Business Case for Intelligent Assistants
+006 [Normal] Artificial intelligence has moved from an experimental technology to core operational infrastructure, and the international literature is nearly unanimous that its most immediate value for small firms lies in workflow automation. Al-Amin et al. (2024) describe how combining data integration, process mapping, predictive analytics, and robotic process automation consolidates fragmented operations, identifies bottlenecks, and frees employees from routine tasks, which increases efficiency, reduces errors, and strengthens competitiveness
+007 [Normal] (TOMO, n.d.)
+008 [Normal] . Their study of end-to-end workflow optimization for SMEs documents that SMEs typically depend on manual processes and fragmented data systems that limit their ability to scale and compete, making AI-assisted consolidation an operational necessity rather than a luxury
+009 [Normal] (TOMO, n.d.)
+010 [Normal] . Hüsson et al. (2021), examining small- and medium-sized service enterprises specifically, report average cost-savings potential of over 31% across relevant business processes when AI and intelligent personal assistants are applied, with personal-assistant features rated as especially useful by domain experts
+011 [Normal] (TOMO, n.d.)
+012 [Normal] . Complementing these efficiency arguments, a review of agentic workflow adoption between 2024 and 2025 found that organizations deploying agentic AI systems achieve 3 to 8 times higher automation rates in knowledge-work processes previously considered unautomatable
+013 [Normal] (Maheen, 2025)
+014 [Normal] .
+015 [Normal] The foreign literature also clarifies what such assistants must look like to work in practice. Comparative experiments across three standard robotic process automation challenges show that rule-based RPA still outperforms LLM-driven agents in execution speed and reliability in repetitive, stable environments, while agentic approaches significantly reduce development time and adapt more flexibly to dynamic interfaces
+016 [Normal] (Průcha, Matoušková, & Strnad, 2025)
+017 [Normal] . An analysis of more than 6,000 publicly available low-code automation workflows similarly finds that LLMs are commonly embedded within broader automation structures involving control logic, external tools, communication services, and storage systems, but that explicit reliability mechanisms such as structured fallback paths and human approval gates remain uncommon, revealing a gap between deployment and engineering maturity
+018 [Normal] (Tang, Zhou, & Chen, 2026)
+019 [Normal] . This evidence cautions that a production assistant for a service firm needs deliberate workflow scaffolding, not only a language model.
+020 [Normal] The Philippine literature mirrors this pattern while adding local constraints. A study of SMEs in Davao del Norte found that firms primarily adopt AI to enhance operational efficiency, reduce errors, and improve customer service, yet face barriers including high costs, a pronounced skills gap, data security concerns, and initial employee resistance, responding with small-scale pilots and incremental staff training
+021 [Normal] (TOMO, n.d.)
+022 [Normal] . Among 100 SMEs surveyed in Angeles City, 75% reported using predictive analytics, with AI significantly enhancing decision-making speed and accuracy and improving operational efficiency and profitability
+023 [Normal] (TOMO, n.d.)
+024 [Normal] . In Sanchez Mira, Cagayan, AI-driven entrepreneurial strategies among rural SMEs were positively associated with customer satisfaction, customer retention, and responsiveness, though low digital literacy and infrastructure deficits forced highly informal adoption practices
+025 [Normal] (TOMO, n.d.)
+026 [Normal] . An AI readiness study of 150 SME owners and managers in the Bangsamoro Autonomous Region in Muslim Mindanao found moderate technological and organizational readiness but low environmental readiness, with AI readiness significantly associated with business performance and organizational readiness showing the strongest influence
+027 [Normal] (Alim, 2026)
+028 [Normal] . A UTAUT-based multi-group analysis of 387 Philippine MSME owner-managers further showed that firm size conditions adoption: performance expectancy exerted substantially stronger influence among medium enterprises than micro enterprises, while social influence showed the inverse pattern
+029 [Normal] (Jr., 2026)
+030 [Normal] . Taken together, these studies suggest that an AI assistant for a Philippine software consultancy must demonstrate clear performance gains on concrete workflows, since that is the adoption lever Philippine firms respond to most strongly.
+031 [Normal] Theme 2: Retrieval-Augmented Generation as an Architecture for Grounded, Domain-Specific AI
+032 [Normal] The second theme concerns the technical core of TOMO: RAG as an answer to the weaknesses of large language models used alone. LLMs alone suffer from hallucination, outdated parametric knowledge, and non-transparent reasoning; RAG addresses these weaknesses by grounding generated responses in external knowledge retrieved at inference time, enabling domain-specific accuracy and continuous knowledge updates without retraining the model
+033 [Normal] (TOMO, n.d.)
+034 [Normal] . The foundational survey of Gao et al. (2023) establishes this paradigm and its pipeline of retrieval, augmentation, and generation
+035 [Normal] (TOMO, n.d.)
+036 [Normal] . Empirical work confirms the magnitude of the improvement: an enhanced RAG framework combining vector search with semantic reranking reduced hallucination rates from 31% to 9% and raised accuracy from 68.4% to 91.2% in a technical knowledge corpus
+037 [Normal] (TOMO, n.d.)
+038 [Normal] .
+039 [Normal] Foreign studies extend this finding in two directions relevant to TOMO. First, on enterprise grounding, an adaptive RAG framework for enterprise knowledge systems combining multi-source ingestion, semantic indexing, and metadata-aware retrieval improved Precision@10 from 0.58 to 0.81, reduced documentation retrieval latency from 45.6 seconds to 12.3 seconds, and shortened average bug-resolution time from 18.4 hours to 7.2 hours in a six-week pilot over a 1.2 million-document corpus
+040 [Normal] (Baqar, 2026)
+041 [Normal] . A hybrid sparse-dense evaluation using reciprocal rank fusion likewise found that the hybrid retriever achieves the highest accuracy, the lowest hallucination rate, and the lowest rejection rate compared with sparse-only and dense-only retrievers
+042 [Normal] (Mala, Gezici, & Giannotti, 2025)
+043 [Normal] . Second, on honest limits, systematic evaluations of alternative RAG topologies caution that the incorporation of external knowledge does not always align with the needs of the task: in one comparison, naive RAG and Graph RAG failed to outperform a fine-tuned model on benchmark question sets, indicating that retrieval design, not the label RAG, determines reliability
+044 [Normal] (AboulEla et al., 2025)
+045 [Normal] . A systematic evaluation of retriever and reranker pairings similarly found that the choice of retriever and similarity metric dominates system performance, while index selection exhibits a negligible impact across most metrics
+046 [Normal] (Elkiran & Rasheed, 2026)
+047 [Normal] . For TOMO, these works argue that architectural requirements analysis, the first objective of the present study, must be evidence-driven and empirically validated rather than assumed.
+048 [Normal] Theme 3: Conversational AI and Knowledge Assistants in Philippine Organizations
+049 [Normal] The third theme locates TOMO in the local research landscape of conversational AI and knowledge assistants. Philippine system development studies show both demand and feasibility. A bilingual retail chatbot was developed to serve Filipino, English, and code-switching Taglish customers in the business process outsourcing sector
+050 [Normal] (TOMO, n.d.)
+051 [Normal] . A Messenger-based knowledge help desk improved response times for more than 11,000 students at a Valenzuela university
+052 [Normal] (TOMO, n.d.)
+053 [Normal] . A RAG-based natural language interface for Philippine Statistics Authority data achieved high user satisfaction under ISO/IEC 25010 evaluation
+054 [Normal] (TOMO, n.d.)
+055 [Normal] . A knowledge help desk for student IT support at Pamantasan ng Lungsod ng Valenzuela documented measurable reductions in response latency for repetitive technical queries
+056 [Normal] (Apostol, 2025)
+057 [Normal] .
+058 [Normal] Beyond chatbots, Philippine adoption studies of AI-enabled services fill out the user-acceptance picture. A survey of 2,254 undergraduate students across 95 Philippine higher education institutions, analyzed with UTAUT2 constructs, found both direct effects on ChatGPT acceptance and moderating roles of age, gender, and experience
+059 [Normal] (Himang et al., 2026)
+060 [Normal] . Among 979 Filipino college students, perceptions of ChatGPT as useful (M = 3.82) and easy to use (M = 3.81) were high, with a strong positive correlation between perceived ease of use and perceived usefulness supporting the central premise of the Technology Acceptance Model
+061 [Normal] (Bustos et al., 2026)
+062 [Normal] . A qualitative study of education students in Kalibo, Aklan found that users valued efficiency in academic work but reported stress from hallucinations and fact-checking demands, pointing to grounding quality as the decisive user-experience factor for conversational AI
+063 [Normal] (Masula, Barrios, & Hilario, 2025)
+064 [Normal] . An evaluation of an Eastern Visayas State University registrar e-assist system built on natural language processing achieved an overall weighted mean of 4.74 across ISO/IEC 25010 criteria, confirming that Philippine institutions accept conversational service systems readily when quality is demonstrated
+065 [Normal] (Macion, Brosas, & Codilan, 2026)
+066 [Normal] . What remains missing in this local literature, as the background of the present study noted, is research on a domain-specific, RAG-powered personal assistant engineered for the internal workflows of a Philippine software consultancy, one that not only answers questions but also optimizes client onboarding, technical support retention, and market positioning
+067 [Normal] (TOMO, n.d.)
+068 [Normal] .
+069 [Normal] Theme 4: Client Acquisition, Retention, and Service Delivery in Knowledge-Intensive Firms
+070 [Normal] The fourth theme connects the assistant to the business problem it targets: stagnation in client acquisition, poor retention, and limited market competitiveness. Foreign evidence establishes why retention deserves priority among SME growth levers. Returning users purchase 4.22 times more frequently than new customers, and purchase frequency accounts for most of their revenue premium, suggesting an opportunity cost when SMEs over-invest in acquisition
+071 [Normal] (TOMO, n.d.)
+072 [Normal] . A systematic review of customer relationship management adoption in SMEs reports 25-40% improvement in customer retention and 15-30% increase in sales when relationship data are properly managed, but notes that limited financial resources and technical expertise hinder full realization of these benefits
+073 [Normal] (TOMO, n.d.)
+074 [Normal] . Research linking SME customer strategy to firm growth in South Korea finds that technology and marketing capabilities directly affect new customer acquisition, indicating that an assistant that centralizes knowledge, accelerates response, and supports both onboarding and support workflows targets the two levers, acquisition and retention, that most directly determine SME growth
+075 [Normal] (TOMO, n.d.)
+076 [Normal] .
+077 [Normal] Service-quality evidence sharpens the mechanism. A study of client satisfaction in a software development firm found a moderate positive relationship between service quality and satisfaction (r = 0.466) and that service quality explains 23.4% of the variation in customer satisfaction, with timely service delivery, technical expertise, responsiveness, and effective communication the major determinants
+078 [Normal] (A Study on Client Satisfaction and Service Quality in a Software Development Company with Reference to Femtosoft, 2026)
+079 [Normal] . An agentic AI system for business workflow automation demonstrated that human-crafted step-by-step plans nearly always yield 100% task accuracy, whereas auto-generated plans almost never do, underscoring the value of codified internal workflow knowledge
+080 [Normal] (XPF: Agentic AI System for Business Workflow Automation, 2025)
+081 [Normal] .
+082 [Normal] Philippine studies converge on the same levers in the local market. A community intervention among digitally literate female entrepreneurs in Davao City confirmed that customer experience is the superior predictor of repurchase intention (β = 0.58 versus 0.21 for reactive content marketing), and the intervention drove a documented 12% improvement in the average 30-day repurchase rate
+083 [Normal] (Gonzales, Martinez, & Limos, 2025)
+084 [Normal] . A phenomenological study of twelve licensed interior designers in Metro Manila found that client acquisition is perceived as a relationship-based process in which CRM practices such as personalized communication, regular follow-ups, and post-project engagement build trust and encourage referrals
+085 [Normal] (Magpayo, 2026)
+086 [Normal] . A descriptive-correlational study of 100 SMEs in Davao City established strong positive relationships between digital marketing and business performance (r = .946) and between marketing strategies and business performance (r = .891)
+087 [Normal] (Felipas-Damag, Miguel, & Obedencia, 2025)
+088 [Normal] . A study of a music studio in Rizal found strong client loyalty driven by positive experiences, trust, and a sense of belonging, while identifying accessibility issues, inconsistent communication, and limited follow-up with former clients as the threats to retention
+089 [Normal] (Briones et al., 2025)
+090 [Normal] . These findings position the intelligent personal assistant not as a consumer novelty but as an operational instrument capable of reshaping how small firms acquire clients, serve them, and retain them
+091 [Normal] (TOMO, n.d.)
+092 [Normal] .
+093 [Normal] Theme 5: Software Quality Evaluation under ISO/IEC 25010
+094 [Normal] The final theme concerns the yardstick against which TOMO will be judged. ISO/IEC 25010 defines the quality characteristics against which software products are assessed, including functional suitability, performance efficiency, compatibility, usability, reliability, security, maintainability, and portability
+095 [Normal] (TOMO, n.d.)
+096 [Normal] . A bibliometric and thematic mapping of the standard's evolution confirms its growing adoption as the common frame for software quality research and practice
+097 [Normal] (Rojas et al., 2025)
+098 [Normal] . Foreign applications demonstrate the standard's reach across domains: a quality assessment model founded on ISO 25010 for an e-learning platform achieved a quality index score of 88.5, deemed satisfactory within the model's scale
+099 [Normal] (Marroquin & Rodriguez, 2023)
+100 [Normal] , and a formalized methodology for evaluating the sufficiency of information for software quality assessment according to ISO 25010 increased the veracity of software quality assessment by 12% in an automated system
+101 [Normal] (Hovorushchenko, 2018)
+102 [Normal] . In the SME sector specifically, a sprint-based Agile development of a web-based goods ordering system validated against all eight ISO/IEC 25010 characteristics achieved a 95% functional-testing success rate and a System Usability Scale score of 82.3
+103 [Normal] (Sasgita et al., 2026)
+104 [Normal] .
+105 [Normal] Philippine system development studies routinely evaluate new systems against this standard with IT experts and end-users as evaluators. An enterprise-level information system for state universities built with Agile methodology received an overall weighted mean of 3.73, interpreted as Excellent
+106 [Normal] (TOMO, n.d.)
+107 [Normal] . A student information management system achieved an overall weighted mean of 4.62, indicating high compliance with the standard, with portability obtaining the highest rating
+108 [Normal] (TOMO, n.d.)
+109 [Normal] . Other Philippine systems evaluated under the same model include a student ID validation monitoring system rated excellent at a mean of 4.52
+110 [Normal] (Muelan, Decomotan, & Lebuna, 2024)
+111 [Normal] , a barangay information management system with an ISO 25010 grand mean of 4.62 and a technology acceptance grand mean of 4.74
+112 [Normal] (Tosper et al., 2025)
+113 [Normal] , and a document management system for accreditation at a Cavite campus rated Excellent for all criteria
+114 [Normal] (Marfil et al., 2025)
+115 [Normal] . The most directly analogous precedent is foreign: an ERP question-answering prototype for an SME in Thailand was evaluated with expert Likert feedback and the System Usability Scale, yielding an overall expert mean of 3.82 and end-user satisfaction of 4.33 while exposing gaps in multi-step reasoning and data privacy boundaries
+116 [Normal] (TOMO, n.d.)
+117 [Normal] . These precedents establish that quality assessment against ISO/IEC 25010 is an accepted and expected component of system development research in both local and foreign contexts
+118 [Normal] (TOMO, n.d.)
+119 [Normal] , and they supply the evaluation design that Objective 4 of the present study follows.
+120 [Normal] Synthesis and Research Gap
+121 [Normal] Across the five themes, the literature agrees on four points. First, AI-driven workflow automation delivers measurable efficiency gains for SMEs, but adoption succeeds only when the technology targets concrete, high-frequency workflows and is introduced with organizational support
+122 [Normal] (TOMO, n.d.)
+123 [Normal] . Second, RAG is the established architectural answer to the hallucination, staleness, and opacity problems of standalone LLMs, and its gains are empirically large, yet retrieval design choices, not the paradigm label, determine reliability
+124 [Normal] (AboulEla et al., 2025)
+125 [Normal] . Third, Philippine organizations demonstrably accept conversational AI, but the local literature concentrates on customer-facing chatbots and academic deployments rather than internal knowledge assistants for technical service delivery
+126 [Normal] (TOMO, n.d.)
+127 [Normal] . Fourth, ISO/IEC 25010 with IT experts and end-users as evaluators is the conventional and expected quality-assessment design in Philippine system development research
+128 [Normal] (TOMO, n.d.)
+129 [Normal] .
+130 [Normal] What remains missing is research on a domain-specific, RAG-powered personal assistant engineered for the internal workflows of a Philippine software consultancy, one that integrates knowledge centralization, response-latency reduction, and workflow optimization for client onboarding, technical support retention, and market positioning within a single system, and validates the result against ISO/IEC 25010. The present study addresses this gap through the development of TOMO, a smart Retrieval-Augmented Generation AI personal assistant for Biglang-awa IT Solutions
+131 [Normal] (TOMO, n.d.)
+132 [Normal] .
+
+### PDF pages 72
+
+-- PAGE 1 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+1 
+ 
+ 
+ 
+A Learning Management System for the 
+Institute of Teacher Education at Colegio 
+de Montalban 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In partial fulfillment of the requirements for the degree Bachelor of 
+ Science in Information Technology 
+ 
+ 
+Researchers: 
+Adedoya, Jade Francis F. 
+Bayson, Elvis Mar 
+Macarang, James Patrick M. 
+Milla, Ma. Sandara J. 
+ 
+October 2026 
+ 
+
+-- PAGE 2 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+2 
+ 
+CHAPTER I 
+INTRODUCTION 
+ 
+1.1 Background of the Study 
+A Learning Management System (LMS) has become a core infrastructure in higher education 
+because it centralizes course content, assessments and communication between students and instructors 
+(Turnbull et al., 2022). Research in different countries shows that while platforms such as Moodle, 
+Google Classroom and other institutional LMS support flexible and data -driven teaching, they also 
+present usability, design and policy challenges that affect how teachers and students actually experience 
+online learning (Olaleye et al., 2023).  According to Olaleye et al. (2023) an evaluation of Moodle 
+usability from the perspecti ve of teachers in a University of Applied Sciences in Finland found that 
+interface design, navigation and analytics dashboards directly influence how instructors interact with 
+the system and support student learning. The overview of LMS policies in higher education institutions 
+reported that many universities have formal guidelines for LMS use but there are still gaps in how these 
+policies are implemented and aligned with actual teaching and learning practices (Turnbull et al., 2022). 
+These global insights suggest that adopting an LMS is not enough, the systems must be usable, policy-
+aligned and responsive to the practical needs of educators and learners. 
+In the Philippines, the rapid expansion of technology-enhanced and distance learning has led to 
+increased use of LMS platforms in both basic and higher education.  According to Borabo (2024) the 
+studies on the utilization of LMS in secondary schools from 2019 to 2023 reported that LMS platforms 
+significantly shaped the implementation of distance learning, influencing access to materials, student 
+engagement and continuity of instruction. At the higher education level , the effectiveness of LMS in 
+universities such as the University of Science and Technology of Southern Philippines highlighted that 
+LMS can support flexible learning but also identified issues related to system usability, support 
+mechanisms and policy reco mmendations to improve institutional implementation (Roa et al., 2023). 
+And in the recent work on the development of a Filipinized LMS further emphasized the importance of 
+
+-- PAGE 3 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+3 
+ 
+integrating local culture, language and educational practices into LMS design, rather than relying solely 
+on imported or generic systems that may not fully fit the Filipino context (Ramos et al., 2024). These 
+local studies underline the need for LMS soluti ons that are both technologically , culturally and 
+contextually appropriate for Filipino learners and teachers. 
+At the Institute of Teacher Education (ITE) of Colegio de Montalban, the use of LMS is 
+becoming more important as courses increasingly integrate in online resources, digital assessments and 
+technology-supported teaching strategies. However, learning activities are still often managed across 
+multiple separate platforms such as social media groups, messaging applications and file -sharing 
+services, which can lead to confusion, missed deadlines and difficulty in monitoring academic progress. 
+The students and faculty may experience challenges in accessing learning resources in one place, 
+managing multiple deadlines and maintaining consistent communication. Especially when courses 
+require timely feedback and organized submission of tasks. These issues highlight the need for a more 
+secure, organized and accessible learning environment tailored to the specific needs of the ITE 
+community. 
+Most existing international and local studies focus on evaluating the usability of widely used 
+LMS platforms, analyzing institutional policies, or assessing the general impact of LMS on teaching 
+and learning outcomes. Although the development of a Filipini zed LMS has begun to address cultural 
+and contextual alignment at a broader institutional level, there is limited research on LMS solutions that 
+are specifically designed for a particular academic unit and that integrate advanced features (Ramos et 
+al., 2024). This reveals a gap in both literature and practice. The absence of a specialized LMS tailored 
+to the workflows, academic integrity concerns and organizational needs of the Institute of Teacher 
+Education at Colegio de Montalban. 
+To address this gap, the present study proposes the development of a Learning Management 
+System designed specifically for the Institute of Teacher Education at Colegio de Montalban. The 
+system will be accessible through desktop, web, and mobile devices . Allowing the students to access 
+learning materials, submit assignments, receive announcements and notifications, view feedback, and 
+
+-- PAGE 4 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+4 
+ 
+monitor their academic activities , and also the instructors will be able to manage courses, upload 
+learning materials, create assignments, monitor submissions, post announcements, provide feedback, 
+and manage student activities.  By aligning system design with global findings on LMS usability and 
+policy, as well as local insights on Filipinized  and Philippine LMS implementations. This study aims 
+to provide a context-sensitive, secure and organized learning environment for the Institute of Teacher 
+Education and contribute to the growing body of research on localized LMS development. 
+ 
+1.2 Statement of the Problem 
+The general problem of this study is the absence of a specialized Learning Management System 
+for the Institute of Teacher Education (ITE) at Colegio de Montalban that centralizes learning activities, 
+strengthens assessment integrity and supports effective communication between students and 
+instructors. At present, academic tasks are managed across multiple separate platforms, which may lead 
+to confusion, missed deadlines, difficulty in tracking academic progress. 
+ 
+Specifically, it seeks to answer the following questions: 
+1. How can a web -based learning management system be developed to centralize access to course 
+materials, assignments, lesson plans, practicum documents, announcements and grades? 
+2. How can a mobile learning application be developed to provide on -the-go access to learning 
+resources, real-time notifications, submission updates, and academic records, ensuring continuous 
+connectivity and accessibility for ITE students and instructors? 
+3. How can a desktop -based administrative console be designed and implemented to serve as the 
+central management hub, enabling secure user account administration, consolidated monitoring of 
+academic records and practicum progress, system audit logging, databa se backup and recovery, 
+and consistent enforcement of institutional policies across the entire ITE? 
+4. What is the level of quality of the proposed Learning Management System as evaluated in 
+accordance with the ISO/IEC 25010 Software Quality Standard in terms of functional suitability, 
+
+-- PAGE 5 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+5 
+ 
+performance efficiency, usability, and security, as well as its overall usefulness in supporting 
+teaching and learning? 
+ 
+1.3 Statement of the Objectives 
+ 
+1.3.1 General Objectives 
+To develop and implement a Learning Management System (LMS) for the Institute of Teacher 
+Education at Colegio de Montalban, that  can be accessed through web, mobile and desktop that 
+centralizes learning activities, enhances assessment integrity and improves communication between 
+students and instructors to enhance usability, reliability, efficiency, security and user satisfaction. 
+ 
+1.3.2 Specific Objectives 
+1. To design and develop a web -based learning management that centralizes access to learning 
+materials, academic announcements, grades, assignments, attendance records, practicum 
+portfolios and coursework submissions. Directly addressing the scattered workflows and 
+practical tracking needs unique to the Institute of Teacher Education at Colegio de Montalban. 
+2. To develop a mobile learning application that provides on-the-go access to learning resources, 
+real-time notifications, submission updates and academic records, ensuring continuous 
+connectivity and accessibility for students and instructors of the Institute of Teacher Education. 
+3. To design and implement a desktop -based administrative console that serves as the central 
+management hub for the system, enabling secure user account administration, consolidated 
+monitoring of academic records and practicum progress, system audit logging, database backup 
+and recovery and consistent enforcement of institutional policies across the entire ITE. 
+4. To evaluate the proposed Learning Management System based on ISO/IEC 25010 in terms of: 
+
+-- PAGE 6 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+6 
+ 
+• Functional Suitability - to assess whether the system provides all required features that 
+fully support the academic management needs of the Institute of Teacher Education. 
+• Usability - To determine how easily users can learn and operate the system, helping 
+ensure smooth interaction and reducing user difficulties during academic tasks such as 
+accessing materials, submitting requirements and viewing grades. 
+• Performance Efficiency - To assess how fast and stable the system performs under 
+different conditions, helping ensure quick processing of tasks such as loading course 
+content, submitting activities, generating assessments and sending notifications 
+without delays. 
+• Security - To assess the system’s ability to enforce data protection standards, preserve 
+the integrity and confidentiality of student and faculty information, and prevent 
+unauthorized access or manipulation of academic records. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+-- PAGE 7 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+7 
+ 
+1.4 Conceptual Framework 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 1.1: A Conceptual Framework Illustrating the development of A Learning Management System 
+for Institute of Teacher Education at Colegio De Montalban 
+ 
+ 
+Review of Related Literature 
+(Vaughn, 2021) said that LMS allows 
+instructors to facilitate and model 
+discussions, plan online activities, set 
+learning expectations, provide learners 
+with options, and assist in problem 
+solving with processes for decision 
+making. 
+ 
+Traditional Methods / Practices 
+Institutions rely on manual and 
+fragmented systems such as paper-
+based records and multiple platforms, 
+which often lead to inefficiency, 
+inconsistent data, and delays in 
+communication. 
+ 
+Software Requirements 
+Next.js 16, TypeScript, Tailwind CSS, 
+React Native with Expo, PostgreSQL, 
+SQLite, Prisma 7, Bcrypt, Docker, 
+Figma and Visual Studio Code 
+   
+Hardware Requirements 
+Intel i5 Processor, 8 GB of RAM 
+(64Bit), 50 GB SSD standard Linux 
+OS, Minimum dual-core processor, 4 
+GB RAM, integrated graphics with 
+WebGL support  
+Mobile Client: iOS 14+ or Android 9+; 
+100 MB available storage, Stable 
+internet connection 
+ 
+SDLC Model used  
+Agile Method 
+ 
+Agile Development Phases  
+ 
+1.Requirements  
+2. Design  
+3.Development 
+4.Testing  
+5.Deplyoment 
+6.Review 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ A Learning Management 
+System for the Institute of 
+Teacher Education at 
+Colegio de Montalban 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+INPUT PROCESS OUTPUT 
+FEEDBACK 
+
+-- PAGE 8 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+8 
+ 
+The project developers adopted the Input –Process–Output model with a feedback mechanism 
+as the conceptual framework for developing the proposed Learning Management System for the 
+Institute of Teacher Education at Colegio de Montalban. The model consists of four main components: 
+input, process, output  and feedback (Adobe Experience Cloud Team, 2023 ). It provides a structured 
+approach to identifying the resources, development processes, expected outcomes and continuous 
+improvements needed for the system. 
+In the input phase, the developers identified the necessary data, tools, platforms and system 
+requirements. The Review of Related Literature serves as the secondary foundation of the study. 
+According to Vaughn (2021), a learning management system allows instructors to facilitate and model 
+discussions, plan online activities, set learning expectations, provide learners with options and assist in 
+problem solving with processes for decision making. Current practices within the Institute of Teacher 
+Education were also examined, revealing reliance on manual and fragmented systems such as 
+paper-based record -keeping and multiple separate platforms including Google Classroom, Google 
+Drive, Google Sheets and other tools used independently for announcements, submissions, grading and 
+tracking academic records. These existing methods often result in inefficiency, i nconsistent data and 
+delays in communication operational gaps that the proposed system seeks to address. The technical 
+requirements include software tools such as Figma for user interface and user experience design and 
+Visual Studio Code for coding and debugging, alongside technologies including Next.js 16, TypeScript, 
+Tailwind CSS, React Native with Expo, PostgreSQL, SQLite, Prisma 7, bcrypt and Docker. The 
+hardware specifications cover a server with an Intel i5 processor, 8  GB of ram and 50 GB of SSD 
+storage running a standard 64 -bit Linux operating system . The D esktop or laptop devices with a 
+minimum dual-core processor, 4 GB of RAM and integrated graphics with WebGL support  and in 
+mobile devices running iOS 14 or later or Android 9 or later with at least 100 MB of available storage, 
+all connected through a stable internet connection. 
+In the process phase , the developers applied the Agile Software Development Life Cycle 
+model composed of six iterative phases Requirements, Design, Development, Testing, Deployment and 
+
+-- PAGE 9 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+9 
+ 
+Review. Saputra (2025) emphasized that developing a learning management system using Agile 
+methodology begins with comprehensive user needs analysis, followed by iterative design and 
+continuous refinement based on feedback. This approach enables developers  to adjust features and 
+improve the system incrementally, resulting in a platform that better aligns with actual user 
+requirements and preferences. An Agile-driven development process enhances system responsiveness, 
+increases user engagement by 25%, and boosts overall satisfaction through personalized and 
+continuously improved features (Saputra, 2025). These stages guide the gathering of user needs from 
+faculty, students and the program head the formulation of system architecture, database structure and 
+user interfaces. 
+In the output phase , the expected result is a fully functional Learning Management System 
+tailored for the Institute of Teacher Education at Colegio de Montalban. The system is designed to serve 
+as a centralized platform for organizing learning materials, managing lessons an d practicum 
+requirements, handling assessments and submissions, monitoring academic performance and 
+maintaining student records thereby consolidating previously scattered processes and reducing manual 
+work. 
+Finally, the feedback mechanism allows instructors, students and the program head to evaluate 
+the system’s strengths and identify areas needing enhancement. Feedback collected after deployment 
+feeds back into the input and process phases, serving as the basis for updates, feat ure refinements and 
+further optimization in subsequent development cycles. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+-- PAGE 10 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+10 
+ 
+1.5 Operational Framework 
+ 
+ 
+Figure 1.2: An Operational Framework Illustrating the development of A Learning Management 
+System for Institute of Teacher Education at Colegio De Montalban. 
+ 
+ 
+The operational framework illustrates the systematic development process of the proposed 
+Learning Management System for the Institute of Teacher Education at Colegio de Montalban using 
+the Agile Software Development Life Cycle (SDLC). The Agile approach wa s selected because it 
+supports iterative and collaborative development  as observed by Saputra (2025), development guided 
+by Agile principles begins with thorough needs analysis and proceeds through repeated cycles of design, 
+refinement and feedback incorporation . A method proven to boost engagement and satisfaction by 
+keeping the system aligned with real user needs as they emerge. This approach enables the system to 
+be refined incrementally, allowing the researchers to incorporate continuous feedback from the Institute 
+of Teacher Education’s management, instructors and students throughout the project lifecycle. 
+ 
+The first phase is Requirements Gathering, the researchers will gather data from institution’s 
+management regarding the current learning challenges  including management of academic activities 
+across multiple separate platforms and difficulties in monitoring academic progress. Also the functional 
+
+
+-- PAGE 11 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+11 
+ 
+and non-functional requirements are gathered through interviews and surveys, documenting the specific 
+needs of the ITE community that the proposed system will address. 
+The second phase is Design, Guided by the established requirements , the system architecture 
+will be created including responsive UI/UX for  web-based platform, a complementary  mobile 
+application, and a desktop -based administrative console , User interfaces are designed to ensure 
+accessibility across devices. Database structures, data flow diagrams, and role-based access frameworks 
+are developed. Security protocols and system standards are defined to protect user information and 
+ensure consistent performance across all platforms. 
+The third phase is Development, the system will be built using modern web technologies and 
+the core features will be implemented incrementally. The web platform is built to serve as the primary 
+centralized environment , the mobile application is developed to provide continuous on -the-go 
+connectivity and access  and the desktop administrative console is implemented as the central 
+management hub for system oversight and institutional control. All components are developed 
+incrementally to ensure steady progress and early integration testing. 
+The fourth phase is Testing, the system will be checked to make sure it works properly, and 
+evaluated in accordance with the ISO/IEC 25010 Software Quality Standard. Functional suitability, 
+performance efficiency, usability and security are assessed to verify that the system meets quality 
+expectations and performs reliably across all intended devices and user roles. Any identified issues are 
+resolved promptly to ensure system stability and dependability prior to release. 
+The fifth phase is Deployment, once everything is ready the system will be launched and made 
+available for management and authorized users of the institution to use. The proper orientation and 
+guidance for the LMS will be provided to ensure the effective system utilization. 
+The final phase is Review, after launch the feedback will be gathered from users to see how 
+well the system works. This input will help find areas to improve and keep making the system better 
+using Agile methodology. 
+ 
+
+-- PAGE 12 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+12 
+ 
+1.6 Scope and Limitations 
+This study focuses on the development of a Learning Management System for the Institute of 
+Teacher Education (ITE) at Colegio de Montalban. The system aims to centralize and organize 
+academic activities to improve the management of learning materials, less on plans, practicum 
+documents, assignments, announcements, notifications, and academic records. It will provide students, 
+instructors, and authorized administrators with a unified platform for managing academic tasks. 
+The system will include core modules for accessing course materials, submitting academic 
+requirements and practicum portfolios, viewing grades, using AI-assisted guidance and chatbot support, 
+receiving calendar -based reminders for deadlines, and managing s tudent and class data through 
+import/export tools. It will also feature dedicated practicum supervision, video demonstration and 
+lesson plan submission tools, and real-time notifications. The system includes basic user authentication 
+and role -based access control to protect user information and ensure that users can access features 
+according to their assigned roles. However, it does not include advanced security features such as 
+biometric authentication or integration with external identity man agement services. Live video 
+conferencing is included as an integrated feature for teaching demonstrations and supervisory meetings, 
+but separate dedicated live streaming or broadcast capabilities are beyond the scope of this study. 
+The system will be accessible through web-based platforms optimized for desktop and mobile 
+devices. A dedicated desktop management console will serve as the administrative hub for user account 
+management, data oversight, and system configuration. The mobile version will provide essential 
+functions such as viewing grades, submitting requirements, and receiving updates, while full 
+administrative and advanced features will be available through the web and desktop console. The study 
+will follow the Agile Software Development Life Cycle (SDLC), covering  requirements gathering, 
+design, development, testing, deployment, and evaluation phases. 
+The respondents of this study will consist of selected ITE students and all ITE instructors. Based 
+on records from the Office of the Registrar dated October 13, 2026, the total student population is 2,725. 
+Using proportionate stratified random sampling, 34 9 students will be selected as respondents. 
+
+-- PAGE 13 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+13 
+ 
+Meanwhile, all 54 ITE instructors composed of 37 full -time and 17 part-time faculty members will be 
+included through total enumeration, resulting in a total of 403 respondents. The evaluation will assess 
+the system in terms of functional suitability, usability, performance efficiency, and security based on 
+selected criteria of the ISO/IEC 25010 software quality standard. 
+The study is limited exclusively to the Institute of Teacher Education and will not extend to 
+other colleges or departments within Colegio de Montalban. The system focuses on essential learning 
+management functions and does not include certain advanced cap abilities such as fully automated 
+external system integration or biometric login. Additionally, the study is subject to external factors such 
+as internet connectivity and device availability, which may affect user experience but are beyond the 
+direct control of the researchers. Long -term effects on academic performance and institutional policy 
+changes will not be measured, as the evaluation focuses on initial system use during the implementation 
+period. 
+ 
+1.7 Significance of the Study 
+This study is significant as it aims to enhance the management of teaching and learning processes 
+by creating a Learning Management System  for the Institute of Teacher Education at Colegio De 
+Montalban. 
+For the Institute of Teacher Education , the proposed system will serve as a centralized 
+platform for organizing, monitoring and managing academic activities such as distribution of learning 
+materials, assessment administration and tracking of student performance. 
+For Administrators, the system will provide tools for managing user accounts, monitoring 
+academic progress, organizing records, and enforcing institutional policies. It will help administrators 
+oversee system operations and ensure that academic information, student data, an d practicum 
+requirements are properly secured and maintained. 
+For Instructors, the system will provide a structured platform for managing course materials, 
+assignments, lesson plans, practicum portfolios, and communication with students. It will help 
+
+-- PAGE 14 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+14 
+ 
+streamline grading, feedback, and submission tracking, allowing instructors to focus more on 
+instructional quality and student guidance. 
+For Students, the system will provide convenient access to learning materials, assignments, 
+announcements, grades, feedback, and practicum requirements through one unified platform. It will 
+help them stay updated on deadlines, monitor academic progress, and manage their  school tasks more 
+efficiently across all programs. 
+For Future Researchers  and Developers , this study may serve as a useful reference for 
+research on Learning Management Systems, and also the agile-based LMS development processes and 
+specialized LMS solutions tailored to specific academic units like teacher education institutes. 
+ 
+1.8 General Features of the System/Study 
+This section outlines the key features and capabilities of the proposed Learning Management 
+System (LMS) for the Institute of Teacher Education at Colegio de Montalban. 
+ 
+1.  Landing Page/Home Page 
+•  Institutes – provides information about the institutes or academic units supported by 
+the learning management system. 
+•  Preview – allows visitors to explore an overview of the system's learning environment, 
+features, and available academic content. 
+•  FAQs – provides answers to frequently asked questions regarding the use of the 
+learning management system, courses, accounts, assignments, and other procedures. 
+•  Mission & Vision – presents the institution's mission and vision to provide users with 
+an understanding of its educational goals and objectives. 
+• About – provides general information about the institution and the Learning 
+Management System. 
+• Sign-In Portal – directs registered users to the appropriate login page for accessing the 
+
+-- PAGE 15 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+15 
+ 
+learning management system. 
+2.Sign-In Page 
+•  User Authentication – allows registered users to securely access the learning 
+management system using their account credentials. 
+•  Role-Based Access – provides users with access to system features according to their 
+assigned roles, such as administrator, instructor, or student. 
+ 
+3. Core Functional Features 
+1. Course and Learning Materials Management 
+• Course Creation – allows instructors to create and manage courses. 
+•  Learning Materials Upload – enables instructors to upload and organize documents, 
+presentations, videos, and other instructional resources. 
+• Submission Tracking – allows instructors to monitor submissions and students to track the 
+status of their submitted assignments. 
+2. Assignment and Submission Management 
+• Assignment Creation – allows instructors to create assignments with instructions, requirements, 
+and deadlines. 
+• Online Submission – enables students to submit their completed assignments. 
+• Submission Tracking – allows instructors to monitor submissions and students to track the 
+status of their submitted assignments. 
+3. Announcements and Notifications Module 
+• Announcements – allows authorized users to publish academic announcements, reminders, and 
+updates. 
+• Notifications – provides users with notifications regarding announcements, assignments, 
+deadlines, course updates, and other academic activities 
+4. Flashcards 
+
+-- PAGE 16 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+16 
+ 
+• Flashcard Creation – allows instructors or authorized users to create digital flashcards 
+containing questions, terms, definitions, or other learning content. 
+• Flashcard Review – allows students to access and review flashcards as an additional study 
+resource. 
+5. Leaderboard 
+• Leaderboard – displays student rankings based on academic performance or completed learning 
+activities to encourage participation and engagement. 
+6. Grade sheet  
+• Grade Sheet Creation – allows instructors to create and manage grade sheets for their respective 
+course 
+•  Grade Recording – enables instructors to record and update student grades. 
+• Grade Viewing – allows students to view their grades and academic performance. 
+Unique/Innovative Features 
+• AI-Assisted Guidance & Learning Support  - Built-in guiding prompts and personalized 
+recommendations integrated directly within lessons and study workflows. 
+• Practicum & Student Teaching Support - Dedicated module for lesson plans, demo teaching 
+submissions, portfolio evidence and supervisory feedback. 
+• Video Demonstration and Lesson Plan Submissions  - Specialized tools for submitting, 
+reviewing, and providing feedback on teaching demonstrations and lesson plan documents. 
+• Video Conferencing Integration  - Built-in platform for live classes, supervisory meetings, 
+and remote teaching demonstrations. 
+• Focus Mode (Distraction -Free Learning)  - Hides notifications, chat and tabs during 
+study/quizzes—rare in most LMS platforms 
+
+-- PAGE 17 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+17 
+ 
+• Participation Tracker with Analytics  - Monitors engagement patterns to identify at risk 
+students early with actionable insights 
+• Offline Access + Auto Sync  - Critical for Philippine context with unstable internet, students 
+work offline and sync seamlessly 
+• Academic Risk Alert System - Proactive detection of at-risk students (missed deadlines, low 
+activity) with dual alerts to students and instructors 
+ 
+1.9 Definition of Terms 
+• Learning Management System (LMS)  - The proposed system that allows students and 
+instructors at the Institute of Teacher Education to manage learning materials, requirements, 
+grades, communication, and academic tasks in one platform. 
+• User Roles - Refers to the classification of system users, specifically management, instructors, 
+and students, each having different access levels and permissions within the system. 
+• Agile Software Development Life Cycle  - A systematic and iterative approach to system 
+development used in this study, consisting of six phases: Requirements, Design, Development, 
+Testing, Deployment, and Review. This methodology allows continuous improvement through 
+regular feedback incorporation throughout the development process. 
+• ISO/IEC 25010 - The international software quality standard used as the evaluation framework 
+of this study, covering functional suitability, performance efficiency, usability, and security as 
+primary quality indicators. 
+• Practicum and Student Teaching Support - Specialized functions within the system designed 
+to accommodate the unique requirements of education students, including the submission of 
+lesson plans, teaching portfolios, and supervisory feedback. 
+
+-- PAGE 18 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+18 
+ 
+• AI-Assisted Guidance & Learning Support  - Refers to the integrated system feature that 
+provides context -aware prompts, personalized recommendations, and helpful suggestions 
+directly within the learning environment. 
+• Video Conferencing Integration - Refers to the built -in capability of the system to host live 
+classes, supervisory meetings, and remote teaching demonstrations directly within the platform.  
+• Video Demonstration and Lesson Plan Submissions  - Refers to the specialized system 
+function that allows students to upload, attach, and submit recorded teaching demonstrations 
+alongside their lesson plan documents.  
+ 
+ 
+ 
+ 
+ 
+CHAPTER II 
+REVIEW OF RELATED LITERATURE 
+ 
+This chapter presents a thematic synthesis of related literature on Learning Management 
+Systems (LMS). Rather than discussing studies one by one, the literature is organized into themes that 
+emerged across foreign and local sources: LMS platforms in higher  education, usability, user 
+experience, and LMS adoption, online assessment, academic integrity, and learning analytics, AI -
+powered chatbot integration, and blended learning, engagement, and LMS development approaches. 
+Local literature is organized into pa rallel themes on the Philippine context. Each theme ends with a 
+synthesis that connects the studies to one another and to the present study, which proposes a Learning 
+Management System for the Institute of Teacher Education (ITE) at Colegio de Montalban. 
+ 
+
+-- PAGE 19 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+19 
+ 
+Related Literature 
+LMS Platforms and Their Role in Higher Education 
+Institutions choose among several platforms with distinct strengths. Moodle emerged as the 
+most extensively studied open-source option, with a systematic review showing that it improves student 
+performance, satisfaction, and engagement while supporting adaptive and collaborative learning across 
+higher education institutions worldwide (Gamage, Ayres, & Behrend, 2022). Blackboard, by contrast, 
+represents the commercial end of the spectrum, widely used in universities particularly in South Africa 
+and the United States for online interaction, assessment, and course management (Badaru & Adu, 2022). 
+Google Classroom occupies a lighter -weight niche, having proven effective and user -friendly 
+communication, assignment management, and accessible learning materials, particularly during the 
+COVID-19 pandemic (Sheelavant, 2020). 
+When students evaluated platforms side by side, they preferred Moodle over Blackboard in 
+terms of usability and system organization, indicating that the open -source platform provides a more 
+user-friendly and structured learning experience (Alghafis, Alrash eed, & Abdulghany, 2020). At the 
+premium end of the market, Paradiso ranked highest among 45 LMS platforms because of its strong 
+interoperability, accessibility, communication tools, and security standards (Sanchez, Penarreta, & 
+Soria Poma, 2024).  Spirin, Vakali uk, Ievdokymov, and Sydorenko (2022) established criteria for 
+choosing a cloud -based LMS in higher education, focusing on usability, accessibility, and system 
+effectiveness. 
+Taken together, these studies suggest that platform choice is not a simple brand decision but a 
+fit problem. The "best" LMS is the one whose usability, interoperability, and accessibility align with 
+the needs of a specific institution. This directly suppor ts the premise of the present study, which 
+develops a platform tailored to the specific workflows of one academic unit rather than adopting a 
+generic system. 
+ 
+ 
+
+-- PAGE 20 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+20 
+ 
+Usability, User Experience, and LMS Adoption 
+Usability and user experience influence whether students adopt and continue using an LMS. 
+Using the Extended Technology Acceptance Model, Fearnley and Amora (2020) found that these two 
+perceptions strongly influence students' intention to adopt LMS platforms in higher education. Maslov, 
+Nikou, and Hansen (2021) reached a converging conclusion through the lens of user experience, 
+emphasizing that usability, accessibility, and system design strongly shape students' satisfaction and 
+continued use. More recentl y, Saona, Alifah, and Zuhriyah (2026) demonstrated experimentally, 
+through a quasi-experimental design, that better UX design significantly improves student motivation, 
+collaboration, and learning outcomes, showing that design quality is not merely cosmetic but 
+pedagogically consequential. 
+In mobile contexts, performance expectancy, effort expectancy, and learning independence 
+significantly influenced students' intentions to use mobile LMS platforms (Alfalah, 2022), and 
+engagement and intention to use mobile LMS were similarly driven by moti vation, perceived 
+usefulness, and ease of use (Imlawi  et al., 2023). Bai (2024) found that in hybrid learning, students' 
+choice between mobile and non -mobile access is shaped by convenience, accessibility, and learning 
+context, which implies that users do not commit to a single device but shift between them depending 
+on circumstances. Kabassi et al. (2016) found that the effectiveness of an LMS used for blended learning 
+in Greek higher education depended on usability, user satisfaction, and how well the system supported 
+blended learning activities. 
+ Küsel, Martin, and Markic (2020) compared university students in Germany and the United 
+States and found that U.S. students showed higher readiness for digital learning, indicating that usability 
+and design interact with users' prior digital preparedness. A system that is easy to use for one population 
+may still overwhelm another. 
+The related studies establishes two premises for the present study, first, that usability and user 
+experience are decisive for LMS success, and second, that because students move between desktop and 
+mobile contexts, a system intended for actual use must be genuinely  rather than merely responsive in 
+
+-- PAGE 21 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+21 
+ 
+name. 
+ 
+Online Assessment, Academic Integrity, and Learning Analytics 
+LMS platforms support assessment, protect academic records, and help monitor student 
+progress. Bulut et al. (2022) concluded that online formative assessments embedded in LMS platforms 
+are strong predictors of students' final academic performance, while Ng uyen (2023) found that well -
+designed LMS-based integrated online assessments increase learning motivation and improve academic 
+outcomes among university students. Assessment within an LMS is therefore not just administrative 
+convenience but a measurable contributor to learning. 
+However, it creates an integrity problem that several studies address directly. Abdelsalam, 
+Shokry, and Idrees (2023) proposed a blockchain -based framework integrated with Moodle to secure 
+online examination data and prevent unauthorized changes to student records, treating tamper-resistance 
+as a design requirement rather than an afterthought. Machine learning models can predict at -risk 
+students at different stages of a course, enabling early intervention and improving success rates (Adnan 
+et al., 2021), an d DeepLMS demonstrated that deep learning techniques can forecast the quality of 
+student interactions within an LMS (Dias et al., 2020). 
+Across the reviewed studies, an LMS should fulfill three important roles in assessment: support 
+learning through formative feedback and motivation, maintain academic integrity and secure student 
+records, and use learning analytics to identify students who may need additional support. The proposed 
+system addresses these needs through anti-cheating mechanisms, secure assessments, and participation 
+tracking. These features highlight the importance of combining effective assessment, data security, and 
+student monitoring in an LMS. 
+ 
+AI-Powered Chatbot Integration 
+A smaller but growing theme concerns conversational AI inside LMS platforms. Essel et al. 
+(2022) revealed that integrating AI-powered chatbots into LMS platforms improved students' academic 
+
+-- PAGE 22 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+22 
+ 
+performance and increased their confidence in using digital learning tools. Snekha and Ayyanathan  
+(2023) developed an educational CRM chatbot integrated with an LMS and showed that chatbots 
+improve student support, communication, and access to learning resources within digital learning 
+environments. 
+Taken together, these studies show that integrating chatbots into an LMS can improve student 
+support, communication, and access to learning resources. By providing quick assistance, chatbots can 
+help students find answers to their academic and technical concerns more easily. These findings support 
+the proposed system's chatbot feature, which aims to provide accessible support for ITE students and 
+instructors and make it easier to address their concerns within one platform. 
+ 
+Blended Learning, Engagement, and LMS Development Approaches 
+On the deployment side, Nugroho, Hidayat, and Nurdin (2023) showed that e -learning-based 
+blended learning improves student motivation by increasing engagement and participation during online 
+classes. Tubagus, Muslim, and Suriani (2020) developed an LMS-based blended learning model using 
+Claroline in higher education and found that integrating LMS tools improves instructional delivery and 
+supports flexible learning environments. Goh and Yang (2021) found that student engagement and flow 
+experience in blended learning environments encourage students to continue using an LMS. Similarly, 
+Turnbull, Chugh, and Luck (2023) found that combining LMS platforms with social media can improve 
+communication, student engagement, and collaborative learning in higher education. 
+On the development side, Saputra (2025) emphasized that building an LMS with Agile 
+methodology begins with a comprehensive user needs analysis, followed by iterative design and 
+continuous refinement based on feedback; this Agile -driven process enhances system responsiveness, 
+increases user engagement by 25%, and boosts overall satisfaction through continuously improved 
+features. 
+Taken together, these studies highlight the connection between engaging blended learning and 
+user-centered system development. Student engagement can be improved by continuously updating the 
+
+-- PAGE 23 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+23 
+ 
+system based on users' needs and feedback. This supports the present study's use of the Agile SDLC, 
+which allows feedback from ITE students and instructors to guide the development and improvement 
+of the proposed system. 
+ 
+LMS and Student Engagement, Performance, and Satisfaction in the Philippines 
+Local studies consistently report positive outcomes from LMS use, mirroring foreign literature. 
+Tus et al. (2021) found a clear positive effect of LMS use on the academic performance of Filipino 
+students during the transition to online and flexible learnin g, noting that these platforms simplify 
+resource sharing and encourage active participation, which is especially valuable in geographically 
+distant areas of the country. At the Senior High School level, Macario et al. (2026) found that Filipino 
+students de monstrated high levels of engagement with digital learning platforms, with cognitive 
+engagement emerging as the strongest predictor of better learning outcomes, although fatigue from 
+frequent online meetings remained a concern. Borabo (2024) verified that LMS utilization significantly 
+improved both teachers' performance and students' academic achievement in Philippine secondary 
+schools offering distance learning from 2019 to 2023, examining widely adopted platforms such as 
+Moodle and Google Classroom. 
+The satisfaction literature completes the picture. Peria et al. (2021) found that LMS use 
+significantly improved the learning satisfaction of Bachelor of Secondary Education English majors at 
+Davao del Norte State College by enhancing access to course mate rials and promoting independent 
+learning habits. Roa and Gimeno (2023) reported high overall satisfaction among learners in Southern 
+Philippines, highlighting effectiveness in knowledge acquisition, critical thinking, and interactive 
+learning. Jupeth  et al. (2023) extended these findings past the pandemic, showing that LMS use 
+significantly boosts academic performance, participation, and satisfaction in Philippine higher 
+education even after the crisis period, establishing LMS as permanent infrastruct ure rather than an 
+emergency measure. 
+Taken together, these studies show that LMS platforms support learning, student engagement, 
+
+-- PAGE 24 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+24 
+ 
+and satisfaction across different educational levels in the Philippines. However, their effectiveness 
+depends on factors such as proper implementation, teacher readiness, accessibility, and the needs of 
+users. These factors are further discussed in the following themes. 
+ 
+Institutional Adoption, Leadership, and Teacher Readiness 
+Malabanan (2025) found that Senior High School leaders in Laguna mostly utilized LMS 
+platforms for storing and distributing learning materials, while the extent of use varied across other 
+functions such as curriculum development, student record management, and assessment administration, 
+revealing uneven and incomplete institutional adoption. Medina (2021) found that Google Workspace 
+for Education showed a moderate positive correlation with teachers' overall performance in online 
+environments and emphasized that targeted training programs are essential to maximize the benefits of 
+these platforms. Panergayo and Aliazas (2023) observed strong acceptance and intention to use Google 
+Classroom among Senior High School teachers and students, with the platform effectively supporting 
+blended learning through reliable content sharing and communication. During the COVID-19 pandemic 
+itself, Santiago Jr. et al. (2021) reported that the strategic use of platforms like Google Classroom 
+allowed Philippine schools and universities to adapt successfully to flexible learning setups. 
+Taken together, these studies show that successful LMS implementation in the Philippines 
+depends on proper system use, institutional support, teacher training, and ease of use. Schools need to 
+maximize LMS features beyond storing and sharing learning mater ials, while teachers need proper 
+training to use the system effectively. Borabo  (2024) also found that proper LMS use can reduce 
+hesitation toward distance learning in Philippine secondary schools. These findings highlight the 
+importance of implementing an LMS that is useful, accessible, and suitable for the needs of teachers 
+and students. 
+ 
+Digital Access Barriers in the Philippine Context 
+A recurring caution across local studies concerns infrastructure. Santiago et al. (2021) observed 
+
+-- PAGE 25 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+25 
+ 
+that while students gradually became more proficient with platforms like Google Classroom under 
+flexible learning, long-standing concerns regarding internet reliability and device availability continued 
+to limit the full effectiveness of online learning. 
+This finding highlights the need for an LMS that can support Filipino learners who experience 
+unstable internet connections and limited device access. It also supports the proposed system's offline 
+access and automatic synchronization features, which aim to help users access learning materials even 
+with limited connectivity. 
+ 
+Localized and Custom-Built LMS Development 
+Filipino efforts to build or adapt LMS platforms for local needs. Genelza (2023) found that 
+Quipper, a curriculum-aligned platform, effectively delivers complete online learning resources while 
+reducing teacher workload and improving student involvement in basic education. Paguirigan (2023) 
+found that a customized Moodle -based LMS successfully supported  flexible teaching and learning in 
+Philippine higher education, showing that custom and open-source systems can respond to the specific 
+demands of local institutions. Delos Santos et al. (2022) established the design principle  underneath 
+both findings: school heads, teachers, and students prefer features such as reliable progress tracking, 
+various assessment tools, and simple, easy -to-use interfaces, meaning that effective local LMS 
+development must be grounded in the actual needs of daily users. 
+Taken together, these studies show that developing an LMS based on the needs of local 
+institutions is a practical approach in the Philippine setting. They also highlight the importance of 
+selecting features based on the actual needs of students, teachers, and school administrators to improve 
+system usability and adoption. 
+ 
+Supporting Quality Framework and Local Study Context  
+The current research is based on the ISO/IEC 25010 Software Quality Model, which acts as the 
+basis for assessing the LMS developed for the Institute of Teacher Education (ITE) in Colegio de 
+
+-- PAGE 26 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+26 
+ 
+Montalban. The assessment involves the following quality characteristics: suitability for intended use, 
+usability, performance efficiency, and security. These qualities indicate whether the LMS has all the 
+necessary functions, is user-friendly, works efficiently, and is secure.  
+Considering the system within the context of the Institute of Teacher Education (ITE) of 
+Colegio de Montalban, the system should facilitate the process of distributing learning materials, 
+submitting assignments, announcements, grade tracking, and also for practicum, which includes 
+submission of lesson plans and demonstration of lessons. This will help in organizing the academic 
+process using one platform. The studies reviewed from the Philippines give an insight into digital 
+learning and academic management , and the local requirements gathering will be done based on the 
+needs of the local population. 
+ 
+Related Systems 
+Moodle 
+Moodle is an open -source Learning Management System used in higher education to support 
+online learning, course management, assessments, and collaboration. Gamage, Ayres, and Behrend 
+(2022) found that Moodle supports student performance, satisfaction, and engagement. Alghafis, 
+Alrasheed, and Abdulghany (2020) also found that students preferred Moodle over Blackboard in terms 
+of usability and system organization. 
+Moodle serves as a reference for the proposed system because of its learning management and 
+assessment capabilities. However, the proposed system focuses on the specific academic workflows of 
+ITE, including course management, learning materials, student teaching activities, and communication 
+between students and instructors. 
+Blackboard 
+Blackboard is a commercial Learning Management System that supports online interaction, 
+assessment, and course management in higher education (Badaru  & Adu, 2022). It provides a digital 
+
+-- PAGE 27 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+27 
+ 
+environment where instructors can manage learning activities and students can access academic 
+resources. 
+Blackboard serves as a reference for organizing online learning activities and assessments. The 
+proposed system similarly aims to provide a centralized platform for ITE students and instructors while 
+focusing on the academic requirements and activities of the institute. 
+Google Classroom 
+Google Classroom is a learning platform that supports communication, assignment 
+management, and access to learning materials. Sheelavant (2020) discussed its usefulness and 
+accessibility, particularly during the COVID-19 pandemic. Panergayo and Aliazas (2023) also reported 
+its acceptance among senior high school teachers and students in the Philippines. 
+Google Classroom serves as a reference for the proposed system's course announcements, 
+assignment management, and communication features. However, the proposed system aims to bring 
+additional ITE-specific functions into one platform, reducing the need to use separate tools for different 
+academic activities. 
+Paradiso LMS 
+Paradiso is a Learning Management System recognized for its interoperability, accessibility, 
+communication tools, and security standards. Sanchez, Penarreta , and Soria Poma (2024) identified 
+these features in their comparison of LMS platforms. 
+Paradiso serves as a reference for the proposed system's accessibility, communication, and 
+security requirements. The proposed system also aims to provide a centralized learning environment 
+that supports the needs of ITE students and instructors. 
+Claroline 
+Claroline is a learning platform used in higher education to support blended learning. Tubagus, 
+
+-- PAGE 28 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+28 
+ 
+Muslim, and Suriani (2020) developed an LMS -based blended learning model using Claroline and 
+found that integrating LMS tools supports instructional delivery and flexible learning environments. 
+Claroline provides a reference for integrating classroom instruction with online learning 
+activities. Similarly, the proposed system aims to support ITE teaching and learning through centralized 
+learning materials, assessments, announcements, and academic activities. 
+Quipper 
+Quipper is a digital learning platform that provides curriculum -aligned learning resources. 
+Genelza (2023) found that it supports the delivery of online learning materials, reduces teacher 
+workload, and improves student involvement in basic education. 
+Quipper serves as a reference for organizing and delivering learning resources. The proposed 
+system, however, is intended specifically for ITE at Colegio de Montalban, with features designed to 
+support the academic activities of students and instructors in teacher education. 
+ 
+Synthesis of the Literature 
+The foreign and local literature together shows that an LMS succeeds when it fits the institution, 
+the users, and the conditions under which learning actually happens. Studies from different contexts 
+reach the same conclusion. LMS platforms can improve learning, engagement, and satisfaction, but the 
+gains depend on how well the system is chosen, designed, and implemented. 
+The reviewed platforms, including Moodle, Blackboard, Google Classroom, Paradiso, 
+Claroline, and Quipper, each have distinct strengths. Gamage & Behrend et al. (2022), Badaru & Adu 
+et al (2022), Sheelavant (2020), Sanchez & Penarreta et al. (2024) Tubagus & Suriani et al. (2020), 
+Genelza (2023). Comparative studies show that no platform is best in every setting. Fearnley & Amora 
+(2020) say that the criteria for selecting a cloud -based LMS centered on usability, accessibility, and 
+
+-- PAGE 29 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+29 
+ 
+effectiveness. Local studies reach a parallel conclusion, customized and curriculum -aligned systems 
+can meet the demands of Philippine institutions. Paguirigan & Genelza  (2023), says that local LMS 
+development should be based on what daily users prefer, namely progress tracking, varied assessment 
+tools, and simple interfaces (Delos Santos et al., 2022). Choosing an LMS is therefore a problem of 
+suitability, which supports building a system around the workflows of a single academic unit rather than 
+adopting a generic one. 
+Foreign studies agree that perceived usability and user experience strongly influence adoption, 
+satisfaction, and continued use Fearnley & Amora (2020), Maslov & Hansen et al. (2021). Quasi -
+experimental evidence shows that better UX design improves motivat ion, collaboration, and learning 
+outcomes Saona & Zuhriyah et al. (2026). Mobile LMS studies show that intention to use depends on 
+ease of use, usefulness, and motivation and that students shift between devices depending on context 
+Alfalah (2022), Imlawi et al. (2023) & (Bai, 2024). Differences in digital readiness across populations 
+mean that a system easy for one group may overwhelm another. The local literature supports says that 
+through ease of use and teacher readiness as conditions for successful im plementation Küsel & Marki 
+(2020). 
+Other studies show that embedded online assessment is a measurable contributor to learning 
+formative assessments that predict final performance, and well -designed integrated assessments raise 
+motivation and outcomes Bulut et al. (2022) & Nguyen (2023). Ass essment also raises integrity 
+concerns, which the literature treats as design requirements. Blockchain -based frameworks protect 
+examination records Abdelsalam & Idrees et al. (2023), while predictive models and deep learning can 
+identify at-risk students and recognize the quality of their interactions Adnan et al.  (2021) & Dias et al. 
+(2020). Other studies also stated that chatbots integrated into an LMS improved students’ academic 
+performance and confidence with digital tools and strengthened student supp ort, communication, and 
+access to resources Essel et al. (2022) & Snekha & Ayyanathan, (2023). An LMS therefore has three 
+assessment roles: supporting learning through feedback, protecting academic integrity and records, and 
+
+-- PAGE 30 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+30 
+ 
+using analytics to direct support to students who need it Bulut et al. (2022), Nguyen (2023) Abdelsalam 
+& Idrees et al. (2023) Adnan et al. (2021) & Dias et al. (2020). 
+The reviewed systems address these qualities independently, and the literature does not describe 
+one particular platform that is suitable for the specific academic activities of a teacher education institute 
+like course management, learning materials, stud ent teaching activities, and student -instructor 
+communication. The proposed Learning Management System (LMS) for the Institute of Teacher 
+Education at Colegio de Montalban addresses this gap by integrating these qualities together in one 
+platform that is designed based on the needs of its own students and instructors. 
+Research Gap 
+The reviewed studies have shown the significance of Learning Management System (LMS) in 
+enhancing the processes of learning, communication, assessment, and learner engagement in higher 
+education. Past studies have studied the usability and functionalities of various platforms including 
+Moodle and Google Classroom (Olaleye et al., 2023). Several studies in the Philippines have 
+emphasized the significance of developing LMS platforms that take into consideration the demands of 
+Filipinos (Ramos et al., 2024). N onetheless, there is still a need for an LMS platform that can address 
+the academic administration needs of the Institute of Teacher Education (ITE) in Colegio de Montalban. 
+The identified gap concerns the lack of an institution -specific system that consolidates 
+academic activities while supporting student monitoring, assessment integrity, and accessible learning 
+management. Using multiple platforms for announcements, learning  materials, submissions, grading, 
+and academic records may lead to fragmented information and difficulties in tracking student progress. 
+  Although existing LMS platforms provide essential tools, further development is needed to 
+integrate features such as chatbot assistance, anti -cheating mechanisms, calendar reminders, 
+participation tracking, academic risk alerts, and offline access with automatic synchronization. 
+In order to bridge the said gaps, this research project is designed to create a web -enabled and 
+
+-- PAGE 31 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+31 
+ 
+mobile-ready LMS for ITE of Colegio de Montalban, with a desktop -enabled administrative interface. 
+The system will serve to centralize learning materials, tasks, notifications, grading, practicum records, 
+and other learning activities. In addition, tools f or measuring student engagement and facilitating 
+communication between students and instructors will be included in the system. Lastly, the quality of 
+the system will be assessed in relation to selected ISO/IEC 25010 quality attributes, including functional 
+suitability, usability, performance efficiency, and security. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+CHAPTER III  
+METHODOLOGY 
+ 
+This chapter details the research methodologies employed to achieve the objectives of the 
+Learning Management System for the Institute of Teacher Education at Colegio de Montalban . The 
+following sections outline the research design, system architecture, target respondents, data gathering 
+procedures and the technical configurations  both hardware and software  required for the successful 
+development and implementation of the project. 
+ 
+
+-- PAGE 32 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+32 
+ 
+3.1 Research Design 
+This study will use a  Descriptive-Quantitative Research Design. This approach is appropriate 
+because it enables the researchers to identify the existing challenges and needs in the academic 
+management of the Institute of Teacher Education, while gathering numerical data from th e 
+respondents. The quantitative information collected through survey questionnaires will be used to assess 
+the effectiveness of the proposed Learning Management System. This study aims to determine whether 
+the developed system can enhance academic manageme nt processes and address the specific needs of 
+students and instructors in the Institute of Teacher Education.  
+ 
+3.2 System / Project Overview  
+The Learning Management System for the Institute of Teacher Education at Colegio de 
+Montalban is designed to improve the efficiency, organization, and centralization of academic 
+management processes, particularly for the Institute of Teacher Education. The  proposed system will 
+provide a unified digital platform that can be accessed through web, mobile, and desktop applications, 
+enabling users to perform academic tasks conveniently across different devices. 
+The system will centralize the management of course materials, assignments, lesson plans, 
+practicum portfolios, announcements, grades and feedback in one digital platform. It addresses the 
+current difficulty of using multiple separate tools and manual processes where information is scattered, 
+deadlines are missed, and tracking student progress and practicum requirements is difficult. Key 
+features include secure user login, role -based access, calendar reminders, AI -assisted guidance, video 
+demonstration submission, offline access and real-time notifications. 
+The quality of the proposed system will be evaluated using the ISO/IEC 25010 criteria: 
+functional suitability to confirm that all required ITE features are present and working , usability to 
+ensure the system is easy to learn and navigate, performance efficiency to verify fast loading and stable 
+operation and security to protect personal information, academic records and student teaching data. 
+Overall, the proposed Learning Management System aims to establish a centralized, accessible, 
+
+-- PAGE 33 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+33 
+ 
+and efficient academic environment for the Institute of Teacher Education. It is expected to simplify 
+academic workflows, improve access to course information and learning resources, strengthen 
+communication among users, streamline practicum supervision and feedback, and support the effective 
+management and monitoring of academic activities within the Institute of Teacher Education. 
+ 
+3.3 Respondents 
+The respondents of the study will be the  selected students and instructors of the Institute of 
+Teacher Education at Colegio de Montalban . They will serve as the primary users of the system and 
+will provide information on their current learning experiences and their evaluation of the proposed 
+LMS. 
+The student population will include officially enrolled students across the year levels recorded 
+by the Registrar for the First Semester of Academic Year 2026 –2027. Based on the records provided 
+by the Office of the Registrar dated October 13, 2026, the student population consists of 2,725 students 
+distributed across five programs: Bachelor of Elementary Education, Bachelor of Early Childhood 
+Education, Bachelor of Technology and Livelihood Education, Bachelor of Secondary Education major 
+in Science, and the Teacher Certificate Program. From this population, 349 students will be selected as 
+respondents using proportionate stratified random sampling. Meanwhile, all 54 ITE instructors 
+composed of 37 full-time and 17 part-time faculty members will be included as respondents based on 
+the records provided by the Human Resource Management Office also dated October 13, 2026. 
+Therefore, the planned total number of respondents will be 403. 
+The responses gathered from the students and instructors will guide the researchers in 
+determining the essential features of the system and assessing the quality of the proposed Learning 
+Management System in terms of functional suitability, usability, performance efficiency, and security. 
+ 
+3.4 Research Locale 
+This study shall be conducted at Colegio de Montalban, specifically within the Institute of 
+
+-- PAGE 34 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+34 
+ 
+Teacher Education, situated in Kasiglahan  Village, San Jose, Montalban, Rizal, Philippines. This 
+institution has been selected as the research locale as the present investigation centers on the design and 
+development of a Learning Management System intended to enhance the organization, accessibil ity, 
+and overall management of academic processes and activities within the Institute of Teacher Education. 
+ 
+3.5 Sampling Technique 
+The researchers will use proportionate stratified random sampling for the student respondents 
+and the census approach or total enumeration for the instructor respondents. Stratified random sampling 
+divides a population into subgroups or strata and selects respondents randomly within each group using 
+proportional allocation, ensuring that every subgroup is represented fairly according to its actual size in 
+the total population (Samson & Yango, 2023). This method is appropriate for this study because the 
+student population of the Institute of Teacher Education is composed of different programs and year 
+levels that may have distinct experiences and needs regarding learning management systems. 
+Proportionate stratified random sampling guarantees that no group is overrepresented or 
+underrepresented, producing results that truly reflect the entire ITE student community. As noted by 
+Tyrer and Heyman (2016), probability -based sampling methods such as stratified random sampling 
+improve the reliability and generalizability of findings compared to non-probability approaches. 
+Student eligibility requires official enrollment in any ITE program such as Bachelor of 
+Elementary Education, Bachelor of Early Childhood Education, Bachelor of Technology and 
+Livelihood Education, Bachelor of Secondary Education major in Science  and the Teacher Certificate 
+Program during the First Semester of Academic Year 2026 –2027. Instructor eligibility requires an 
+active teaching assignment within ITE during the same period, whether full -time or part -time. All 
+participants will be informed about t he study’s purpose, participation will be voluntary  and informed 
+consent will be secured before data collection begins. Prior experience with similar platforms will be 
+recorded as background information but will not be used to exclude otherwise eligible  students 
+orientation will be provided to support those with limited experience. Pilot participants will not be 
+
+-- PAGE 35 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+35 
+ 
+included in the main evaluation sample. 
+Slovin's Formula: 
+n = N / (1 + Ne²) 
+Where: 
+• n = target sample size 
+• N = total student population = 2,725  
+• e = margin of error = 5% (0.05) 
+Sample Computation: 
+𝒏= 𝑵
+𝟏+𝑵(𝟎.𝟎𝟓)𝟐 
+ 
+𝒏= 𝑵
+𝟏+𝑵(𝟎.𝟎𝟎𝟐𝟓) 
+ 
+ 
+Ahmed (2024) explains that Slovin’s Formula is a practical and widely accepted method for 
+determining sample size from a finite population, allowing researchers to estimate the minimum number 
+of respondents needed to represent the group at a specified margin of error. 
+Substituting the values:  
+n = 2725 / [1 + 2725(0.05)²] 
+The formula becomes: 
+n = 2725 / [1 + 2725(0.0025)] 
+Multiply 2,725 by 0.0025: 
+2725 × 0.0025 = 6.8125 
+Now the formula becomes: 
+n = 2725 / (1 + 6.8125) 
+
+-- PAGE 36 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+36 
+ 
+n = 2725 / 7.8125 = 348.80 
+Since you cannot survey 0.80 of a student , round up gives a target of 349 student respondents. This is 
+a planned sample size, actual completed responses will be reported after data collection. 
+The sample will be distributed proportionately across the groups using the formula: 
+nₕ = (Nₕ / N) × n 
+Where: 
+nₕ = sample size for each stratum 
+Nₕ = population of each stratum 
+N = total student population 
+n = total student sample size 
+Substituting the values: 
+Bachelor of Elementary Education (BEEd) 
+First Year: (447 / 2725) × 349 = 57.28 → 57 
+Second Year: (239 / 2725) × 349 = 30.67 → 31 
+Third Year: (113 / 2725) × 349 = 14.51 → 15 
+Fourth Year: (121 / 2725) × 349 = 15.53 → 16 
+Bachelor of Early Childhood Education (BECEd) 
+First Year: (239 / 2725) × 349 = 30.67 → 31 
+Second Year: (88 / 2725) × 349 = 11.26 → 11 
+Third Year: (68 / 2725) × 349 = 8.70 → 9 
+Fourth Year: (18 / 2725) × 349 = 2.30 → 2 
+Bachelor of Technology and Livelihood Education (BTLEd–ICT) 
+First Year: (358 / 2725) × 349 = 45.83 → 46 
+Second Year: (177 / 2725) × 349 = 22.66 → 23 
+Third Year: (109 / 2725) × 349 = 13.96 → 14 
+Fourth Year: (97 / 2725) × 349 = 12.42 → 12 
+
+-- PAGE 37 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+37 
+ 
+Bachelor of Secondary Education (BSED–Science) 
+First Year: (326 / 2725) × 349 = 41.73 → 42 
+Second Year: (109 / 2725) × 349 = 13.96 → 14 
+Third Year: (162 / 2725) × 349 = 20.74 → 21 
+Fourth Year: (50 / 2725) × 349 = 6.40 → 6 
+Teacher Certificate Program (TCP) 
+TCP: (4 / 2725) × 349 = 0.51 → 1 
+Total student respondents: 57 + 31 + 15 + 16 + 31 + 11 + 9 + 2 + 46 + 23 + 14 + 12 + 42 + 14 + 21 + 6 
++ 1 = 349 
+ 
+The following table will be used to present the proportionate distribution of student respondents 
+according to their program and year level. 
+PROGRAM / YEAR LEVEL POPULATION SAMPLE SIZE 
+BEEd   
+1st Year 447 57 
+2nd Year 239 31 
+3rd Year 113 15 
+4th Year 121 16 
+BECEd   
+1st Year 239 31 
+2nd Year 88 11 
+
+-- PAGE 38 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+38 
+ 
+PROGRAM / YEAR LEVEL POPULATION SAMPLE SIZE 
+3rd Year 68 9 
+4th Year 18 2 
+BTLEd–ICT   
+1st Year 358 46 
+2nd Year 177 23 
+3rd Year 109 14 
+4th Year 97 12 
+BSED–Science   
+1st Year 326 42 
+2nd Year 109 14 
+3rd Year 162 21 
+4th Year 50 6 
+TCP 4 1 
+TOTAL 2,725 349 
+Table 3.1: Proportionate Distribution of Student Respondents by Program and Year Level 
+Source: Office of the Registrar, Colegio de Montalban, certification dated October 13, 2026 
+After determining the sample size for each group, the researchers will use proportionate 
+
+-- PAGE 39 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+39 
+ 
+stratified random sampling to select student respondents from their respective groups. This procedure 
+will ensure that all programs and year levels are represented in proportion to their share of the total 
+student population. 
+Meanwhile, total enumeration or also known as Census Approach will be used for the instructor 
+respondents. Based on the records provided by the Human Resource Management Office dated October 
+13, 2026, the Institute of Teacher Education has a total of 54 instructors. 37 full-time and 17 part-time. 
+Tyrer and Heyman (2016) note that when a subgroup is relatively small and every member’s perspective 
+is important to the study, including the entire group through total enumeration is appropriate and 
+strengthens the completeness of the data. All 54 instructors will be invited to participate in the study to 
+provide feedback on current academic processes and the requirements of the proposed system. Through 
+these sampling techniques, the researchers will gather information from 349 students and all 54 ITE 
+instructors to support the development and evaluation of the proposed system. 
+This sampling approach aligns with the study’s descriptive -quantitative research design. 
+Aggarwal and Ranganathan (2019) explain that descriptive studies aim to characterize the status of a 
+defined group or phenomenon, and probability sampling such as stra tified random sampling supports 
+this goal by producing data that can be reliably described and interpreted for the target population. The 
+method will describe the current situation and evaluate the proposed system based on measurable data 
+it does not estab lish causal relationships or eliminate all sources of bias, but it provides a structured, 
+transparent and widely accepted approach to selecting participants in educational research. 
+ 
+3.6 Instruments and Methods for Data Collection  
+The primary instrument used in this study is a  survey questionnaire developed by the 
+researchers specifically to evaluate the proposed Learning Management System for the Institute of 
+Teacher Education at Colegio de Montalban. The researchers already conducted a needs analysis to 
+gather data on current academic management practices, challenges encountered when using multiple 
+platforms, and limitations of existing manual processes these findings served as the basis for identifying 
+
+-- PAGE 40 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+40 
+ 
+the features and quality criteria assessed in this questionnaire. 
+Two sets of evaluation questionnaires were prepared , one for student respondents and another 
+for instructor respondents. Both questionnaires focus exclusively on assessing the proposed system in 
+terms of functional suitability, usability, performance efficiency, security, and overall user satisfaction, 
+aligned with the ISO/IEC 25010 Software Quality Standard. 
+The questionnaires follow a structured format using a four -point Likert scale, with response 
+options ranging from Strongly Agree (4), Agree (3), Disagree (2), to Strongly Disagree (1). These 
+options represent the respondents’ level of agreement with statements about the proposed system’s 
+expected performance and features. 
+A four-point Likert scale serves as the basis for interpreting responses. Each option carries a 
+numerical value 4 for Strongly Agree down to 1 for Strongly Disagree. This scale is widely used in 
+system evaluation because it encourages clear, decisive feedback without a neutral midpoint, producing 
+results that are specific and actionable (DLSU SHSResCon, 2021; Wiley, n.d.). 
+The mean interval was computed as follows: 
+Interval = (Highest Value − Lowest Value) ÷ Number of Scale Points 
+Interval = (4 − 1) ÷ 4 = 0.75 
+The scale used for interpretation is presented below: 
+Scale Mean Interval Verbal Interpretation 
+4 3.26 – 4.00 Strongly Agree 
+3 2.51 – 3.25 Agree 
+2 1.76 – 2.50 Disagree 
+1 1.00 – 1.75 Strongly Disagree 
+Table 3.2: Four-Point Likert Scale  
+
+-- PAGE 41 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+41 
+ 
+Statistical Treatment 
+Descriptive statistics will be used to analyze and summarize the evaluation data. These 
+methods are appropriate for this study because they provide a clear, reliable description of the 
+respondents’ assessment of the proposed system, producing results that are easy to interpret and 
+present (Lozada et al., 2026; Ovid, n.d.). 
+Frequency and Simple Percentage will describe the profile of the respondents such as 
+program, year level, and role to confirm that the sample represents the ITE population. Frequency 
+shows how many respondents belong to each category, while percentage expresses these numbers as 
+proportions. This ensures that the evaluation results reflect the views of the intended users (Martin et 
+al., 2022; Ovid, n.d.). 
+Formula: 
+P = (F ÷ N) × 100 
+Where: 
+• P = Percentage 
+• F = Frequency of responses in a category 
+• N = Total number of respondents 
+• 100 = Constant multiplier 
+Weighted Mean will determine the average rating assigned to each quality criterion — 
+functional suitability, usability, performance efficiency, security, and overall satisfaction. It is the 
+standard tool for analyzing Likert-scale evaluation data because it accounts for how many respondents 
+chose each option, giving an accurate summary of the system’s expected quality (Burgos, 2021; 
+PLOS ONE, n.d.). 
+Formula: 
+x̄  = Σ(fx) ÷ N 
+Where: 
+• x̄ = Weighted mean 
+
+-- PAGE 42 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+42 
+ 
+• Σ = Summation (sum of all values) 
+• f = Frequency of each response 
+• x = Numerical weight assigned to each response 
+• N = Total number of respondents 
+The computed weighted means will be interpreted using the four-point Likert scale to 
+describe the overall level of agreement and expected satisfaction with the proposed system. 
+Methods for Data Collection 
+The researchers followed a systematic procedure to gather the evaluation data for the 
+proposed Learning Management System: 
+First, based on the findings from the previously conducted needs analysis, the researchers 
+prepared an evaluation questionnaire aligned with the ISO/IEC 25010 criteria. The instrument was 
+reviewed and validated by the research adviser and selected experts to ensure clarity, relevance, and 
+alignment with the system’s intended functions. 
+Next, the researchers selected 349 student respondents through proportionate stratified 
+random sampling, drawn from a total population of 2,725 ITE students grouped by program and year 
+level. And all 54 ITE instructors 37 full-time and 17 part-time were included through total 
+enumeration, giving a total of 403 respondents.  
+The researchers secured permission from the appropriate school authorities. The purpose of 
+the study, the scope of the evaluation and the assurance that all responses will remain confidential and 
+used solely for academic research were explained. Informed consent was obtained from every 
+respondent before participation. 
+The researchers personally distributed the questionnaires to the selected respondents and 
+collected them upon completion. All responses were checked for completeness, organized and tallied. 
+The data were then analyzed using the statistical tools described above to evaluate the proposed 
+Learning Management System. 
+ 
+
+-- PAGE 43 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+43 
+ 
+3.7 Hardware Requirements 
+The following hardware specifications are recommended to support system hosting and user access: 
+Category Specification 
+Server-Side  
+Processor Minimum 4-core CPU 
+Memory Minimum 8 GB RAM 
+Storage 
+Minimum 50 GB SSD, expandable depending on database size and 
+uploaded files 
+Operating System Linux distribution 
+Client-Side - Web Users 
+(Desktop/Laptop) 
+ 
+Processor Dual-core CPU or higher 
+Memory Minimum 4 GB RAM 
+Graphics Integrated graphics with WebGL support for interactive 3D activities 
+Browser 
+Updated version of Google Chrome, Microsoft Edge,  Brave, Firefox 
+or Safari 
+Client-Side - Mobile 
+Users 
+ 
+Operating System iOS 14 or later, or Android 9 or later 
+
+-- PAGE 44 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+44 
+ 
+Category Specification 
+Storage Approximately 100 MB of available storage 
+Network Stable internet connection 
+Table 3.3: Recommended Hardware Specifications for System Hosting and User Access 
+These requirements will help ensure that the LMS can operate effectively across all supported 
+platforms. Actual performance may vary depending on the number of concurrent users, the complexity 
+of system activities and the available hardware and network resources. 
+ 
+3.8 Software Requirements 
+The proposed Learning Management System will use the following technologies across its platforms: 
+Component Technologies / Details 
+Frontend Web 
+Next.js 16, React 19, TypeScript, Tailwind CSS — responsive and user -
+friendly interface 
+Frontend Mobile React Native with Expo 
+Frontend Desktop Electron 
+Backend & 
+Database 
+PostgreSQL (data storage); Prisma 7 (database operations); Next.js Route 
+Handlers (API requests & backend processes) 
+Security & Access 
+Control 
+Session-based authentication, bcrypt password hashing, Role-Based Access 
+Control (RBAC) 
+External Services Judge0 deployed using Docker — code execution engine for real -time 
+
+-- PAGE 45 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+45 
+ 
+Component Technologies / Details 
+programming evaluation 
+Table 3.4: Software Technologies and Components of the Proposed Learning Management System 
+These technologies will ensure that the system is responsive, secure and accessible across web, mobile 
+and desktop platforms. System performance and functionality may vary depending on device 
+compatibility, network connection and regular software updates. 
+ 
+3.9 Ethical Considerations 
+The researchers first sent an official request letter to the authorities of Colegio de Montalban 
+before conducting the initial data gathering. 
+The researchers will handle personal data in accordance with Republic Act No. 10173, the Data 
+Privacy Act of 2012, its Implementing Rules and Regulations and applicable institutional requirements 
+of Colegio de Montalban. Data collection will follow the principles of transparency, legitimate purpose, 
+and proportionality. Only information necessary for approved recruitment, needs analysis  and system 
+evaluation will be requested. Access to enrollment lists, contact details or education records will require 
+institutional authorization and the applicable lawful basis , research participation will not grant 
+unrestricted access to student or faculty records of the Institute of Teacher Education (Republic Act No. 
+10173, 2012; National Privacy Commission, 2016). 
+Before taking part in the study, all ITE students, instructors and interview partners will receive 
+a clear privacy notice and consent information stating the research purpose, what information will be 
+gathered, how it will be used, who may receive it, how it will be stored, how long it will be kept and 
+whom to contact  with privacy concerns or data requests. Participation and interview recording will 
+proceed only after the appropriate consent has been given. Declining to join or withdrawing from the 
+study will not affect grades, employment status or access to standard i nstitutional services of the 
+Institute. Any limits on withdrawing data after it has been permanently anonymized will be explained 
+
+-- PAGE 46 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+46 
+ 
+in advance. 
+Digital files will be kept in password -protected, access -restricted institutional or approved 
+research storage, with encryption used where available  and paper forms will be stored in a locked and 
+secure location. Only authorized members of the research team and officially approved reviewers will 
+be granted access to information necessary to carry out their respective responsibilities. The retention 
+period will be stated clearly in the participant information before data collection begins  and once that 
+period ends, all data will be securely deleted or shredded. The researchers will also refer to the 
+institution’s Student Manual, Faculty Manual and Colegio de Montalban official guidelines as relevant 
+references throughout system deployment and implementation for the Institute of Teacher Education.  
+Any suspected data privacy incidents will be reported and addressed immediately through the 
+institution’s established data protection procedures. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+-- PAGE 47 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+47 
+ 
+3.10 Flowchart 
+Student View 
+ 
+Figure 3.1: Student View - Flowchart of the Learning Management System for the Institute of Teacher 
+Education at Colegio De Montalban 
+
+
+-- PAGE 48 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+48 
+ 
+Instructor View 
+ 
+Figure 3.2: Instructor View - Flowchart of the Learning Management System for the Institute of 
+Teacher Education at Colegio De Montalban 
+ 
+
+
+-- PAGE 49 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+49 
+ 
+Administrator View 
+ 
+Figure 3.3: Administrator View - Flowchart of the Learning Management System for the Institute of 
+Teacher Education at Colegio De Montalban 
+
+
+-- PAGE 50 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+50 
+ 
+3.11 Entity Relationship Diagram 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+-- PAGE 51 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+51 
+ 
+ 
+Figure 3.4: Entity Relationship Diagram of the Learning Management System for the Institute of 
+Teacher Education at Colegio De Montalban 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+-- PAGE 52 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+52 
+ 
+3.12 Data Flow Diagram 
+ 
+Figure 3.5: Level 0 Data Flow Diagram of the Learning Management System for the Institute of 
+Teacher Education at Colegio De Montalban 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+-- PAGE 53 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+53 
+ 
+Student 
+ 
+Figure 3.6: Data Flow Diagram - Student Module of the Learning Management System for the 
+Institute of Teacher Education at Colegio De Montalban 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+-- PAGE 54 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+54 
+ 
+Instructor
+ 
+Figure 3.7: Data Flow Diagram - Instructor Module of the Learning Management System for the 
+Institute of Teacher Education at Colegio De Montalban 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+-- PAGE 55 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+55 
+ 
+Administrator
+ 
+Figure 3.8: Data Flow Diagram - Administrator Module of the Learning Management System for the 
+Institute of Teacher Education at Colegio De Montalban 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+-- PAGE 56 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+56 
+ 
+REFERENCES 
+ 
+Saputra, J. P. B. (2025). Development of Gamification -Based Learning Management System (LMS) 
+with Agile Approach and Personalization of FSLSM Learning Style to Improve Learning Effectiveness. 
+Journal of Applied Data Sciences, 6(1), 714–725. https://doi.org/10.47738/jads.v6i1.486 
+Adobe Experience Cloud Team. (2023). Learn how to use the input -process-output (IPO) model . 
+Adobe.Com. https://business.adobe.com/blog/basics/learn-about-the-input-output-model 
+Abaricia, C., & Santos, M. L. D. (2023). Enhancing E-Learning System through Learning Management 
+System (LMS) Technologies: Reshape the Learner Experience. International Journal of Computing 
+Sciences Research, 7, 2066–2079. https://doi.org/10.25147/ijcsr.2017.001.1.152 
+Bradley, V. M. (2020). Learning Management System (LMS) Use with Online Instruction. 
+International Journal of Technology in Education, 4(1), 68–92. https://doi.org/10.46328/ijte.36 
+Wang, H., Shukur, Z., Zainol Ariffin, K. A., Xiao, R., & Wang, L. (2025). Online exam cheating 
+detection and blockchain trusted deposit based on YOLOv12.  Scientific Reports , 15(1). 
+https://doi.org/10.1038/s41598-025-18412-0 
+Aigerim Mansurova, Aliya Nugumanova, & Zhansaya Makhambetova. (2023). DEVELOPMENT OF 
+A QUESTION ANSWERING CHATBOT.  Scientific Journal of Astana IT University , 27 –40. 
+https://doi.org/10.37943/15XNDZ6667 
+Turnbull, D., Chugh, R., & Luck, J. (2022). An Overview of the Common Elements of Learning 
+Management System Policies in Higher Education Institutions.  TechTrends, 66(5), 855 –867. 
+https://doi.org/10.1007/s11528-022-00752-7 
+Bok, S., Shum, J., & Lee, M. (2024). Temporal Motivation Theory: Punctuality Is a Matter of 
+Seconds. Journal of Marketing Education, 46(3). https://doi.org/10.1177/02734753241232564 
+Olha Anurina. (2019, May 10).  Agile SDLC: Skyrocketing Your Project with Agile Principles . 
+Mlsdev.Com. https://mlsdev.com/blog/agile-sdlc 
+Olaleye, S., Agjei , R., Jimoh, B., & Adoma, P. (2023). Evaluation of Usability in Moodle Learning 
+
+-- PAGE 57 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+57 
+ 
+Management System through Analytics Graphs: University of Applied Sciences Teacher’s Perspective 
+in Finland.  International Journal of Education and Development Using Information and 
+Communication Technology , 19(3), 85 –107. 
+https://eric.ed.gov/?q=Learning+Management+System&ff1=subForeign+Countries&id=EJ1413526 
+Turnbull, D., Chugh, R., & Luck, J. (2022). An Overview of the Common Elements of Learning 
+Management System Policies in Higher Education Institutions.  TechTrends: Linking Research and 
+Practice to Improve Learning , 66(5), 855 –867. 
+https://eric.ed.gov/?q=Learning+Management+System&ff1=subForeign+Countries&id=EJ1348047 
+Ramos, R. C., Garcia, P., Roxas-Ridulme, Q., Ria Valerie Cabanes, Hanna May Rosario, Marie Karen 
+Enrile, Ronaldo De Jesus, Cariza Dolliente, & Sandoval, A. (2024). Development of a Filipinized 
+Learning Management System.  SN Computer Science , 5(3). https://doi.org/10.1007/s42979-024-
+02621-x 
+Borabo, J. G., Diño, I. E., Gueta, J. A., Espela , D. F., Garcia, L. H., Espinosa, M. L., & Digo, G. S. 
+(2024). Impact of the Utilization of Learning Management System in the Implementation of Distance 
+Learning in Secondary Schools in the Philippines from 2019 to 2023.  Journal of Community 
+Development Research (Humanities and Social Sciences) , 17(2), 1–13. https://doi.org/10.14456/jcdr-
+hs.2024.9 
+Roa, M. F. V., Gimeno, E. L. A., Tenorio, C. B., & Malawani, A. D. (2023). Effectiveness Of Learning 
+Management System In University Of Science And Technology Of Southern Philippines Cagayan De 
+Oro And Villanueva Campuses: A Policy Recommendation.  E3S Web of Conferences , 440, 05003. 
+https://doi.org/10.1051/e3sconf/202344005003 
+Gamage, S. H. P. W., Ayres, J. R., & Behrend, M. B. (2022). A systematic review on trends in using 
+Moodle for teaching and learning . International Journal of STEM Education, 9 (1), 9. 
+https://doi.org/10.1186/s40594-021-00323-x 
+Badaru, K., & Adu, E. (2022). Platformisation of Education: An Analysis of South African Universities’ 
+Learning Management Systems.  Research in Social Sciences and Technology , 7(2), 66 -86. 
+
+-- PAGE 58 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+58 
+ 
+https://doi.org/10.46303/ressat.2022.10 
+Spirin, O. M., Vakaliuk, T. A., Ievdokymov, V. V., & Sydorenko, S. I. (2022). CRITERIA FOR 
+SELECTING A CLOUD -BASED LEARNING MANAGEMENT SYSTEM FOR A HIGHER 
+EDUCATION INSTITUTION. Information Technologies and Learning Tools, 89(3), 105 -120. 
+https://doi.org/10.33407/itlt.v89i3.4958 
+Sheelavant, S. (2020). Google Classroom: An effective tool for online teaching and learning in this 
+COVID era . Indian Journal of Forensic Medicine & Toxicology, 14 (4). 
+https://doi.org/10.37506/ijfmt.v14i4.11527 
+Essel, H. B., Vlachopoulos, D., Tachie-Menson, A., Johnson, E. E., & Baah, P. K. (2022). The impact 
+of a virtual teaching assistant (chatbot) on students' learning in Ghanaian higher education . 
+International Journal of Educational Technology in Higher Education, 19 (1), 57. 
+https://doi.org/10.1186/s41239-022-00362-6 
+Sanchez, L., Penarreta, J., & Soria Poma, X. (2024). Learning management systems for higher 
+education: A brief comparison. Discover Education, 3(1), 58. https://doi.org/10.1007/s44217-024-
+00143-5 
+Abdelsalam, A., Shokry, A., & Idrees, A. M. (2023). A proposed model for improving the reliability of 
+online exam results using blockchain. International Journal of Advanced Computer Science and 
+Applications, 14(8). https://doi.org/10.14569/IJACSA.2023.0140879 
+Alfalah, A. A. (2022). Factors influencing students’ adoption and use of mobile learning management 
+systems (m -LMSs): A quantitative study of Saudi Arabia. Heliyon, 8(12), e12506. 
+https://doi.org/10.1016/j.heliyon.2022.e12506 
+Bulut, O., Gorgun, G., Yildirim -Erbasli, S. N., & Yildirim, S. (2022). Standing on the shoulders of 
+giants: Online formative assessments as the foundation for predictive learning analytics models. Smart 
+Learning Environments, 9(1), 28. https://doi.org/10.1186/s40561-022-00198-0 
+Development of E-Learning-Based Blended Learning to Increase Student Learning Motivation During 
+a Pandemic. (2023). APTISI Transactions on Management, 7(2), 153 -162. 
+
+-- PAGE 59 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+59 
+ 
+https://doi.org/10.33050/atm.v7i2.1992 
+Dias, S.B., Hadjileontiadou, S.J., Diniz, J. et al. DeepLMS: a deep learning predictive model for 
+supporting online learning in the Covid -19 era. Sci Rep 10, 19888 (2020). 
+https://doi.org/10.1038/s41598-020-76740-9 
+Goh, T. T., & Yang, B. (2021). The role of e-engagement and flow on the continuance with a learning 
+management system in a blended learning environment. International Journal of Educational 
+Technology in Higher Education, 18(1), 49. https://doi.org/10.1186/s41239-021-00285-8 
+Saona, S., Alifah, N., & Zuhriyah, N. F. (2026). The effect of user experience (UX) design on learning 
+management systems on student motivation, collaboration, and learning outcomes: A quasi -
+experimental study. Jurnal Pendidikan Indonesia, 7(2), 82 –94. 
+https://doi.org/10.59141/japendi.v7i2.9661 
+Tubagus, M., Muslim, S., & Suriani, S. (2020). Development of learning management system -based 
+blended learning model using Claroline in higher education. International Journal of Interactive Mobile 
+Technologies, 14(6), 182–193. https://doi.org/10.3991/ijim.v14i06.13399 
+Turnbull, D., Chugh, R., & Luck, J. (2023). Learning management systems and social media: A case 
+for their integration in higher education institutions. Research in Learning Technology, 31, 1 –16. 
+https://doi.org/10.25304/rlt.v31.2814 
+Adnan, M., Habib, A., Ashraf, J., Khan, S. U., et al. (2021). Predicting at -risk students at different 
+percentages of course length for early intervention using machine learning models. IEEE Access, 9, 1–
+1. https://doi.org/10.1109/ACCESS.2021.3049446 
+Fearnley, M. R., & Amora, J. T. (2020). Learning management system adoption in higher education 
+using the extended technology acceptance model. IAFOR Journal of Education: Technology in 
+Education, 8(2). https://doi.org/10.22492/ije.8.2.05 
+Alghafis, A., Alrasheed, A., & Abdulghany, A. (2020). A study on the usability of Moodle and 
+Blackboard: Saudi students’ perspectives. International Journal of Interactive Mobile Technologies, 
+14(10), 126–138. https://doi.org/10.3991/ijim.v14i10.14381 
+
+-- PAGE 60 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+60 
+ 
+Snekha, S., & Ayyanathan, N. (2023). An educational CRM chatbot for learning management system. 
+International Journal of Education and Development using Information and Communication 
+Technology, 19(4), 1–??. https://doi.org/10.34293/education.v11i4.6360 
+Imlawi, J., Al-Shatnawi, A., AlFawwaz, B. M., Al-Shatnawi, H. M., & Al-masaeed, S. (2023). A model 
+predicting student engagement and intention with mobile learning management systems. 
+Interdisciplinary Journal of Information, Knowledge, and Management, 18, 149 –172. 
+https://doi.org/10.28945/5099 
+Kabassi, K., Dragonas, I., Ntouzevits, A., Pomonis, T., Papastathopoulos, G., & Vozaitis, Y. (2016). 
+Evaluating a learning management system for blended learning in Greek higher education. 
+SpringerPlus, 5, 101. https://doi.org/10.1186/s40064-016-1736-9 
+Bai, H. (2024). Students’ use of learning management system in hybrid learning: Mobile or not. 
+https://doi.org/10.70725/737216eaqxof 
+Nguyen, H.-T. T. (2023). LMS-based integrated online assessment implementation at the university to 
+foster learning motivation and academic performance. Interactive Learning Environments. 
+https://doi.org/10.1080/10494820.2023.2187422 
+Maslov, I., Nikou, S., & Hansen, P. (2021). Exploring user experience of learning management system. 
+International Journal of Information and Learning Technology. https://doi.org/10.1108/IJILT-03-2021-
+0052 
+Küsel, J., Martin, F., & Markic, S. (2020). University students’ readiness for using digital media and 
+online learning —Comparison between Germany and the USA . Education Sciences, 10 (11), 313. 
+https://doi.org/10.3390/educsci10110313 
+Philippines Cagayan De Oro And Villanueva Campuses: A Policy Recommendation. E3S Web of 
+Conferences, 440, 05003. https://doi.org/10.1051/e3sconf/202344005003  
+Maria Farina V. Roa, Esjohol Lester A. Gimeno, Christine B. Tenorio, Ajree D. Malawani. (2023). 
+Effectiveness Of Learning Management System In University Of Science And Technology Of Southern 
+Philippines Cagayan De Oro And Villanueva Campuses: A Policy Rec ommendation. 
+
+-- PAGE 61 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+61 
+ 
+https://doi.org/10.1051/e3sconf/202344005003 
+Cereneo S. Santiago Jr., Ma. Leah P. Ulanday, Zarah Jane R. Centeno, Ma. Cristina D. Bayla, Joseph 
+S. Callanta. (2021). Flexible Learning Adaptabilities in the New Normal: E-Learning Resources, Digital 
+Meeting Platforms, Online Learning Systems and Learnin g 
+Engagement.https://files.eric.ed.gov/fulltext/EJ1332615.pdf 
+Cent Kenneth T. Peria1, Margie V. Candolita2, Jedidiah A. Mahinay3, Ellvan Campos4, Mark Van M. 
+Buladaco5. (2021). Impact of Learning Management System as a New Platform of Instruction towards 
+Learning Satisfaction of BSED English Students of Davao del Norte State 
+College.https://rsisinternational.org/journals/ijriss/Digital-Library/volume-5-issue-2/79-88.pdf 
+Jonnell G. Borabo, Imelda E. Diño, Donna F. Espela, Ligaya H. Garcia, Marco L. Espinosa, Gerry S. 
+Digo. (2024).https://www.journal.nu.ac.th/JCDR/article/view/Vol-17-No-2-2024-1-13 
+Ronald Paul B. Macario, Jayson R. Tabian, Jesus Paguigan. (2026). Impact of Digital Learning 
+Platforms on Senior High School Students’ Engagement in the 
+Philippines.https://www.ijfmr.com/papers/2026/1/67161.pdf 
+Arnold B. Medina. (2021). Utilization of Learning Management System (LMS) and Teachers’ 
+Perceived Performance in the Online Learning Modality: A Linear Regression 
+Analysis.https://files.eric.ed.gov/fulltext/ED618423.pdf 
+Albert Andry Panergayo, John Vincent Aliazas. (2023). Google Classroom Adoption as Learning 
+Management System in Senior High School Using Technology Acceptance 
+Model.https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4533623 
+Arnold B. Medina. (2021).Utilization of Learning Management System (LMS) and Teachers’ Perceived 
+Performance in the Online Learning Modality: A Linear Regression 
+Analysis.https://files.eric.ed.gov/fulltext/ED618423.pdf 
+Maria Salud M. Delos Santos*, Dennis C. Durano, and Arlene D. Hortillosa. (2023). The Development 
+of a Proposed Learning Management System for Senior High Schools in the 
+Philippines.https://www.ijiet.org/vol13/IJIET-V13N3-1823.pdf 
+
+-- PAGE 62 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+62 
+ 
+Pentang, J.T., Bucad, M.L. & Bautista, R.M. (2025). Flexible learning modalities in the Philippines: 
+COVID-19 and beyond. In: M.S. Carandang (Ed.), Teaching & Learning Beyond the Classroom (pp. 
+34-47). Institute of Industry and Academic Research Incorporated. https://doi.org/10.53378/09.25.008 
+Albert Andry E. Panergayo  and John Vincent C. Aliazas, “Students’ Behavioral Intention to Use 
+Learning Management System: The Mediating Role of Perceived Usefulness and Ease of Use,” 
+International Journal of Information and Education Technology vol. 11, no. 11, pp. 538 -545, 
+2021.https://www.ijiet.org/show-162-1904-1.html 
+Samson, V., & Yango, A. (2023). Effectiveness of learning management system, teachers’ techno -
+pedagogical skills, and students’ learning engagement in Senior High School at the University Of 
+Perpetual Help System -Jonelta Campuses. Technium Social Sciences Journal , 44, 220 –240. 
+https://doi.org/10.47577/tssj.v44i1.8949 
+Ahmed, S. K. (2024). How to choose a sampling technique and determine sample size for research: A 
+simplified guide for researchers. Oral Oncology Reports , 12, 100662. 
+https://doi.org/10.1016/j.oor.2024.100662 
+Tyrer, S., & Heyman, B. (2016). Sampling in epidemiological research: issues, hazards and pitfalls. 
+BJPsych Bulletin, 40(2), 57–60. https://doi.org/10.1192/pb.bp.114.050203 
+Aggarwal, R., & Ranganathan, P. (2019). Study designs: Part 2 – Descriptive studies. Perspectives in 
+Clinical Research, 10(1), 34. https://doi.org/10.4103/picr.picr_154_18 
+Republic Act No. 10173 | GOVPH . (2012, August 15). Official Gazette of the Republic of the 
+Philippines. https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/ 
+Implementing Rules and Regulations of the Data Privacy Act of 2012 - National Privacy Commission. 
+(2017, March 29). National Privacy Commission. https://privacy.gov.ph/implementing-rules-
+regulations-data-privacy-act-2012/ 
+Research Portal . (2018). Dlsud.Edu.Ph. 
+https://portal.dlsud.edu.ph/research/DetailView.aspx?ContentID=8144 
+Martin, C. L. T., & Cabanilla, C. J. L. (2022). Reasons for Webcam Usage Preferences of Grade 12 
+
+-- PAGE 63 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+63 
+ 
+Students during Synchronous Meetings . Animo Repository. 
+https://animorepository.dlsu.edu.ph/conf_shsrescon/2022/paper_cli/7 
+Learning management system for data structures and algorithm - IIARI. (2021, September). Iiari. 
+https://iiari.org/journal_article/ijstem-v1-1-153/ 
+León-Mantero, C., Casas -Rosal, J. C., Pedrosa -Jesús, C., & Maz -Machado, A. (2020). Measuring 
+attitude towards mathematics using Likert scale surveys: The weighted average. PLOS ONE, 15(10), 
+e0239626. https://doi.org/10.1371/journal.pone.0239626 
+Boctot, J. C. Y., Delos Santos, K. M., Mangundayao, D. F. S. I., Siy, S. B. A., & So, C. B. B. (2021). 
+The Perceptions of Incoming College Students from One of the Universities of the South on the Use of 
+Biomimicry as a Method in the Field of Engineering . Animo Repository. 
+https://animorepository.dlsu.edu.ph/conf_shsrescon/2021/paper_cli/4 
+Chyung, S. Y. Y., Roberts, K., Swanson, I., & Hankinson, A. (2017). Evidence -Based Survey Design: 
+The Use of a Midpoint on the Likert Scale. Performance Improvement , 56(10), 15 –23. 
+https://doi.org/10.1002/pfi.21727 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+-- PAGE 64 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+64 
+ 
+APPENDICES 
+ 
+Appendix A: REQUEST LETTER TO THE OFFICE OF THE REGISTRAR 
+Appendix B: REQUEST LETTER TO THE HUMAN RESOURCE MANAGEMENT OFFICE 
+Appendix C: PERMISSION LETTER TO CONDUCT STUDY AND INTERVIEWS 
+Appendix D: RESPONSE FROM THE HUMAN RESOURCE MANAGEMENT OFFICE  
+Appendix E: RESPONSE FROM THE OFFICE OF THE REGISTRAR 
+Appendix F: RESPONSE NEEDS ANALYSIS QUESTIONNAIRE 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+-- PAGE 65 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+65 
+ 
+APPENDIX A: REQUEST LETTER TO THE OFFICE OF THE REGISTRAR 
+ 
+ 
+
+
+-- PAGE 66 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+66 
+ 
+APPENDIX B: REQUEST LETTER TO THE HUMAN RESOURCE MANAGEMENT 
+OFFICE 
+ 
+ 
+
+
+-- PAGE 67 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+67 
+ 
+APPENDIX C: PERMISSION LETTER TO CONDUCT STUDY AND INTERVIEWS 
+ 
+ 
+
+
+-- PAGE 68 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+68 
+ 
+APPENDIX D: RESPONSE FROM THE HUMAN RESOURCE MANAGEMENT OFFICE 
+  
+ 
+ 
+ 
+ 
+
+
+-- PAGE 69 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+69 
+ 
+APPENDIX E: RESPONSE FROM THE OFFICE OF THE REGISTRAR 
+
+
+-- PAGE 70 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+70 
+ 
+APPENDIX F: NEEDS ANALYSIS QUESTIONNAIRE  
+ 
+ 
+ 
+
+
+-- PAGE 71 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+71 
+ 
+NEEDS ANALYSIS QUESTIONNAIRE  
+ 
+ 
+ 
+
+
+-- PAGE 72 --
+ 
+Colegio de Montalban 
+Kasiglahan Village, San Jose, Rodriguez, Rizal 
+Institute of Computing Studies  
+ 
+72 
+ 
+NEEDS ANALYSIS QUESTIONNAIRE  
+ 
+ 
