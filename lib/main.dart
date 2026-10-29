@@ -150,7 +150,7 @@ class HomePage extends StatelessWidget {
       const SizedBox(height: 10),
       ActivityTile(icon: Icons.auto_awesome_outlined, tint: const Color(0xFFEEF2E7), title: '3 new jobs match your profile', detail: 'New work is waiting in your area.', time: 'Today · 9:42 AM', onTap: () => _go(context, 1)),
       ActivityTile(icon: Icons.check_rounded, tint: const Color(0xFFEAF3E9), title: 'Application confirmed', detail: 'Northstar Studio wants to work with you.', time: 'Today · 8:15 AM', onTap: () => _go(context, 2)),
-      ActivityTile(icon: Icons.receipt_long_outlined, tint: const Color(0xFFF6EEE6), title: 'Invoice #INV-024 paid', detail: 'Your $1,200 payment is on its way.', time: 'Yesterday · 2:18 PM', onTap: () => _go(context, 3)),
+      ActivityTile(icon: Icons.receipt_long_outlined, tint: const Color(0xFFF6EEE6), title: 'Invoice #INV-024 paid', detail: 'Your \$1,200 payment is on its way.', time: 'Yesterday · 2:18 PM', onTap: () => _go(context, 3)),
     ]);
   }
 }
