@@ -7,9 +7,7 @@ import 'package:http/http.dart' as http;
 const _configuredTomoApiUrl = String.fromEnvironment('TOMO_API_BASE_URL');
 String get defaultTomoApiUrl => _configuredTomoApiUrl.isNotEmpty
     ? _configuredTomoApiUrl
-    : kIsWeb
-        ? 'http://192.168.50.111:8080'
-        : 'http://10.0.2.2:8080';
+    : 'http://192.168.50.111:8080';
 
 class TomoApiException implements Exception {
   const TomoApiException(this.message, {this.statusCode});
