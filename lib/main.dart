@@ -12,12 +12,7 @@ const muted = Color(0xFF746F80);
 const paper = Color(0xFFFFF8F0);
 const aqua = Color(0xFF9DD9D2);
 const aquaSoft = Color(0xFFE8F7F5);
-
-// Temporary development credentials, matching the Tomo web app defaults.
-const tomoUsername =
-    String.fromEnvironment('TOMO_USERNAME', defaultValue: 'superadmin');
-const tomoPassword =
-    String.fromEnvironment('TOMO_PASSWORD', defaultValue: 'password');
+const jasmine = Color(0xFFF4D06F);
 
 void main() => runApp(const TomoApp());
 
@@ -63,6 +58,12 @@ class TomoApp extends StatelessWidget {
               const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
             ),
           ),
+          chipTheme: ChipThemeData(
+            backgroundColor: aquaSoft,
+            selectedColor: jasmine,
+            labelStyle: const TextStyle(color: ink),
+            side: const BorderSide(color: Color(0xFFD3EEE9)),
+          ),
           cardTheme: CardThemeData(
             color: Colors.white,
             elevation: 0,
@@ -91,11 +92,7 @@ class TomoApp extends StatelessWidget {
           ),
           useMaterial3: true,
         ),
-        home: TomoHome(
-            api: TomoApi(
-                baseUrl: defaultTomoApiUrl,
-                username: tomoUsername,
-                password: tomoPassword)),
+        home: const ConnectPage(),
       );
 }
 
@@ -106,7 +103,6 @@ class ConnectPage extends StatefulWidget {
 }
 
 class _ConnectPageState extends State<ConnectPage> {
-  final url = TextEditingController(text: defaultTomoApiUrl);
   final username = TextEditingController();
   final password = TextEditingController();
   bool busy = false;
@@ -118,7 +114,7 @@ class _ConnectPageState extends State<ConnectPage> {
       error = null;
     });
     final api = TomoApi(
-        baseUrl: url.text,
+        baseUrl: defaultTomoApiUrl,
         username: username.text.trim(),
         password: password.text);
     try {
@@ -139,7 +135,6 @@ class _ConnectPageState extends State<ConnectPage> {
 
   @override
   void dispose() {
-    url.dispose();
     username.dispose();
     password.dispose();
     super.dispose();
@@ -156,8 +151,19 @@ class _ConnectPageState extends State<ConnectPage> {
                       child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const BrandMark(),
-                            const SizedBox(height: 30),
+                            Center(
+                                child: Container(
+                                    width: 136,
+                                    height: 136,
+                                    padding: const EdgeInsets.all(12),
+                                    decoration: const BoxDecoration(
+                                        color: Colors.white,
+                                        shape: BoxShape.circle),
+                                    child: ClipOval(
+                                        child: SvgPicture.asset(
+                                            'assets/brand/tomo-logo.svg',
+                                            fit: BoxFit.contain)))),
+                            const SizedBox(height: 26),
                             const Text('Connect to Tomo',
                                 style: TextStyle(
                                     fontSize: 28,
@@ -168,14 +174,6 @@ class _ConnectPageState extends State<ConnectPage> {
                                 'Sign in with your Tomo account to get new job alerts, apply to jobs, and chat with your assistant.',
                                 style: TextStyle(color: muted, height: 1.5)),
                             const SizedBox(height: 26),
-                            TextField(
-                                controller: url,
-                                keyboardType: TextInputType.url,
-                                decoration: const InputDecoration(
-                                    labelText: 'Backend URL',
-                                    hintText: 'https://your-tomo-server.com',
-                                    border: OutlineInputBorder())),
-                            const SizedBox(height: 12),
                             TextField(
                                 controller: username,
                                 autocorrect: false,
@@ -208,118 +206,7 @@ class _ConnectPageState extends State<ConnectPage> {
                                             child: CircularProgressIndicator(
                                                 strokeWidth: 2))
                                         : const Text('Connect to Tomo'))),
-                            const SizedBox(height: 8),
-                            SizedBox(
-                                width: double.infinity,
-                                child: TextButton(
-                                    onPressed: busy
-                                        ? null
-                                        : () => Navigator.of(context)
-                                            .pushReplacement(MaterialPageRoute(
-                                                builder: (_) =>
-                                                    const GuestHome())),
-                                    child: const Text('Continue as guest'))),
-                            const SizedBox(height: 14),
-                            const Text(
-                                'For an Android emulator, use http://10.0.2.2:8080. For a phone, enter the Tomo server address reachable on your network.',
-                                style: TextStyle(
-                                    fontSize: 12, color: muted, height: 1.5)),
                           ]))))));
-}
-
-class GuestHome extends StatefulWidget {
-  const GuestHome({super.key});
-  @override
-  State<GuestHome> createState() => _GuestHomeState();
-}
-
-class _GuestHomeState extends State<GuestHome> {
-  int tab = 0;
-
-  @override
-  Widget build(BuildContext context) {
-    const pages = [
-      _GuestFeature(
-          icon: Icons.notifications_outlined,
-          title: 'Your alerts will appear here',
-          message:
-              'Connect to Tomo to see notifications when a fresh job list is found.'),
-      _GuestFeature(
-          icon: Icons.work_outline,
-          title: 'Explore Tomo jobs',
-          message:
-              'Connect to your account to browse current jobs, read details, and apply.'),
-      _GuestFeature(
-          icon: Icons.auto_awesome_outlined,
-          title: 'Meet your AI assistant',
-          message:
-              'Connect to Tomo to ask the assistant about jobs and applications.'),
-    ];
-    return Scaffold(
-      appBar: AppBar(title: const BrandMark()),
-      body: SafeArea(
-          child: Padding(
-              padding: const EdgeInsets.all(22),
-              child: Column(children: [
-                Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.all(12),
-                    decoration: BoxDecoration(
-                        color: aquaSoft,
-                        borderRadius: BorderRadius.circular(12)),
-                    child: const Text('Guest preview · Live Tomo data is off',
-                        style: TextStyle(
-                            color: const Color(0xFF397C74),
-                            fontWeight: FontWeight.w600))),
-                Expanded(child: pages[tab]),
-                SizedBox(
-                    width: double.infinity,
-                    height: 50,
-                    child: FilledButton.icon(
-                        onPressed: () => Navigator.of(context)
-                            .pushAndRemoveUntil(
-                                MaterialPageRoute(
-                                    builder: (_) => const ConnectPage()),
-                                (_) => false),
-                        icon: const Icon(Icons.login),
-                        label: const Text('Connect to your Tomo account')))
-              ]))),
-      bottomNavigationBar: NavigationBar(
-          selectedIndex: tab,
-          onDestinationSelected: (index) => setState(() => tab = index),
-          destinations: const [
-            NavigationDestination(
-                icon: Icon(Icons.notifications_outlined), label: 'Alerts'),
-            NavigationDestination(
-                icon: Icon(Icons.work_outline), label: 'Jobs'),
-            NavigationDestination(
-                icon: Icon(Icons.auto_awesome_outlined), label: 'Assistant')
-          ]),
-    );
-  }
-}
-
-class _GuestFeature extends StatelessWidget {
-  const _GuestFeature(
-      {required this.icon, required this.title, required this.message});
-  final IconData icon;
-  final String title;
-  final String message;
-
-  @override
-  Widget build(BuildContext context) => Center(
-          child: Column(mainAxisSize: MainAxisSize.min, children: [
-        Icon(icon, color: brand, size: 44),
-        const SizedBox(height: 14),
-        Text(title,
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-                color: ink, fontWeight: FontWeight.w700, fontSize: 19)),
-        const SizedBox(height: 8),
-        Text(message,
-            textAlign: TextAlign.center,
-            style: const TextStyle(color: muted, height: 1.5))
-      ]));
 }
 
 class TomoHome extends StatefulWidget {
@@ -398,6 +285,34 @@ class BrandMark extends StatelessWidget {
           width: 38,
           height: 38,
           fit: BoxFit.contain,
+        ),
+      );
+}
+
+class _TomoAvatar extends StatelessWidget {
+  const _TomoAvatar({required this.size});
+  final double size;
+
+  @override
+  Widget build(BuildContext context) => Semantics(
+        label: 'Tomo assistant',
+        image: true,
+        child: Container(
+          width: size,
+          height: size,
+          clipBehavior: Clip.antiAlias,
+          decoration: BoxDecoration(
+            color: aquaSoft,
+            shape: BoxShape.circle,
+            border: Border.all(color: const Color.fromRGBO(91, 172, 159, 1)),
+          ),
+          child: Padding(
+            padding: EdgeInsets.all(size * 0.04),
+            child: SvgPicture.asset(
+              'assets/brand/tomo-logo.svg',
+              fit: BoxFit.cover,
+            ),
+          ),
         ),
       );
 }
@@ -675,6 +590,17 @@ class JobCard extends StatelessWidget {
                         ]),
                     const SizedBox(height: 5),
                     Text(job.employer, style: const TextStyle(color: muted)),
+                    const SizedBox(height: 5),
+                    Row(children: [
+                      const Icon(Icons.schedule, size: 14, color: muted),
+                      const SizedBox(width: 4),
+                      Text(
+                        job.postedOn == null
+                            ? 'Posted date unavailable'
+                            : 'Posted ${_date(job.postedOn)}',
+                        style: const TextStyle(color: muted, fontSize: 12),
+                      ),
+                    ]),
                     const SizedBox(height: 8),
                     Row(children: [
                       const Icon(Icons.location_on_outlined,
@@ -711,71 +637,145 @@ class JobCard extends StatelessWidget {
 Future<void> showJobDetails(
     BuildContext context, TomoApi api, JobListing job) async {
   await showModalBottomSheet<void>(
-      context: context,
-      isScrollControlled: true,
-      showDragHandle: true,
-      builder: (context) => SafeArea(
-          child: Padding(
-              padding: const EdgeInsets.fromLTRB(22, 4, 22, 24),
-              child: SingleChildScrollView(
+    context: context,
+    isScrollControlled: true,
+    backgroundColor: Colors.transparent,
+    elevation: 0,
+    constraints: BoxConstraints(
+      maxWidth: 600,
+      maxHeight: MediaQuery.sizeOf(context).height * 0.84,
+    ),
+    builder: (context) => SafeArea(
+      top: false,
+      child: Align(
+        alignment: Alignment.bottomCenter,
+        child: Container(
+          margin: const EdgeInsets.fromLTRB(12, 8, 12, 12),
+          constraints: BoxConstraints(
+            maxHeight: MediaQuery.sizeOf(context).height * 0.82,
+          ),
+          clipBehavior: Clip.antiAlias,
+          decoration: BoxDecoration(
+            color: paper,
+            borderRadius: BorderRadius.circular(24),
+            border: Border.all(color: const Color(0xFFE9E2D9)),
+            boxShadow: const [
+              BoxShadow(
+                color: Color(0x26392F5A),
+                blurRadius: 24,
+                offset: Offset(0, 8),
+              ),
+            ],
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const SizedBox(height: 12),
+              Container(
+                width: 38,
+                height: 4,
+                decoration: BoxDecoration(
+                  color: const Color(0x73392F5A),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+              ),
+              const SizedBox(height: 8),
+              Flexible(
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.fromLTRB(22, 8, 22, 24),
                   child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                    Text(job.title,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        job.title,
                         style: const TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.w800,
-                            color: ink)),
-                    const SizedBox(height: 6),
-                    Text('${job.employer} · ${job.location}',
-                        style: const TextStyle(color: muted)),
-                    const SizedBox(height: 16),
-                    Wrap(spacing: 7, children: [
-                      if (job.employmentType.isNotEmpty)
-                        _Tag(job.employmentType),
-                      if (job.shift.isNotEmpty) _Tag(job.shift),
-                      if (job.payRange.isNotEmpty) _Tag(job.payRange),
-                      if (job.isRemote) const _Tag('Remote')
-                    ]),
-                    const SizedBox(height: 18),
-                    const Text('About the role',
+                          fontSize: 24,
+                          fontWeight: FontWeight.w800,
+                          color: ink,
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      Text(
+                        '${job.employer} · ${job.location}',
+                        style: const TextStyle(color: muted),
+                      ),
+                      const SizedBox(height: 16),
+                      Wrap(
+                        spacing: 7,
+                        children: [
+                          if (job.employmentType.isNotEmpty)
+                            _Tag(job.employmentType),
+                          if (job.shift.isNotEmpty) _Tag(job.shift),
+                          if (job.payRange.isNotEmpty) _Tag(job.payRange),
+                          if (job.isRemote) const _Tag('Remote'),
+                        ],
+                      ),
+                      const SizedBox(height: 18),
+                      const Text(
+                        'About the role',
                         style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.w700)),
-                    const SizedBox(height: 8),
-                    SelectableText(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w700,
+                          color: ink,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      SelectableText(
                         job.description.isEmpty
                             ? 'No description available.'
                             : job.description,
-                        style: const TextStyle(color: muted, height: 1.55)),
-                    if (job.skills.isNotEmpty) ...[
-                      const SizedBox(height: 18),
-                      const Text('Skills',
-                          style: TextStyle(fontWeight: FontWeight.w700)),
-                      const SizedBox(height: 6),
-                      Text(job.skills, style: const TextStyle(color: muted))
-                    ],
-                    const SizedBox(height: 22),
-                    SizedBox(
+                        style: const TextStyle(color: muted, height: 1.55),
+                      ),
+                      if (job.skills.isNotEmpty) ...[
+                        const SizedBox(height: 18),
+                        const Text(
+                          'Skills',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w700,
+                            color: ink,
+                          ),
+                        ),
+                        const SizedBox(height: 6),
+                        Text(job.skills,
+                            style: const TextStyle(color: muted)),
+                      ],
+                      const SizedBox(height: 22),
+                      SizedBox(
                         width: double.infinity,
                         child: FilledButton.icon(
-                            onPressed: job.applyLink.isEmpty
-                                ? null
-                                : () async {
-                                    final uri = Uri.tryParse(job.applyLink);
-                                    if (uri != null &&
-                                        await canLaunchUrl(uri)) {
-                                      await launchUrl(uri,
-                                          mode: LaunchMode.externalApplication);
-                                    } else if (context.mounted) {
-                                      ScaffoldMessenger.of(context)
-                                          .showSnackBar(const SnackBar(
-                                              content: Text(
-                                                  'No application link is available for this job.')));
-                                    }
-                                  },
-                            icon: const Icon(Icons.open_in_new),
-                            label: const Text('Apply for this job')))
-                  ])))));
+                          onPressed: job.applyLink.isEmpty
+                              ? null
+                              : () async {
+                                  final uri = Uri.tryParse(job.applyLink);
+                                  if (uri != null && await canLaunchUrl(uri)) {
+                                    await launchUrl(
+                                      uri,
+                                      mode: LaunchMode.externalApplication,
+                                    );
+                                  } else if (context.mounted) {
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      const SnackBar(
+                                        content: Text(
+                                          'No application link is available for this job.',
+                                        ),
+                                      ),
+                                    );
+                                  }
+                                },
+                          icon: const Icon(Icons.open_in_new),
+                          label: const Text('Apply for this job'),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ),
+  );
 }
 
 class AssistantPage extends StatefulWidget {
@@ -837,9 +837,7 @@ class _AssistantPageState extends State<AssistantPage> {
         Padding(
             padding: const EdgeInsets.fromLTRB(20, 18, 20, 12),
             child: Row(children: [
-              const CircleAvatar(
-                  backgroundColor: aquaSoft,
-                  child: Icon(Icons.auto_awesome, color: Color(0xFF397C74))),
+              const _TomoAvatar(size: 42),
               const SizedBox(width: 12),
               const Expanded(
                   child: Column(
@@ -872,38 +870,65 @@ class _AssistantPageState extends State<AssistantPage> {
                         return const Align(
                             alignment: Alignment.centerLeft,
                             child: Padding(
-                                padding: EdgeInsets.all(12),
-                                child: CircularProgressIndicator()));
-                      }
-                      final m = messages[i];
-                      return Align(
-                          alignment: m.user
-                              ? Alignment.centerRight
-                              : Alignment.centerLeft,
-                          child: Container(
-                              constraints: const BoxConstraints(maxWidth: 330),
-                              margin: const EdgeInsets.only(bottom: 10),
-                              padding: const EdgeInsets.all(13),
-                              decoration: BoxDecoration(
-                                  color: m.user ? ink : Colors.white,
-                                  borderRadius: BorderRadius.circular(16)),
-                              child: Column(
+                                padding: EdgeInsets.only(bottom: 10),
+                                child: Row(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(m.text,
-                                        style: TextStyle(
-                                            color: m.user ? Colors.white : ink,
-                                            height: 1.45)),
-                                    if (m.sources.isNotEmpty) ...[
-                                      const SizedBox(height: 8),
-                                      Text('Sources: ${m.sources.join(', ')}',
-                                          style: TextStyle(
-                                              color: m.user
-                                                  ? Colors.white70
-                                                  : muted,
-                                              fontSize: 11))
-                                    ]
-                                  ])));
+                                    _TomoAvatar(size: 30),
+                                    SizedBox(width: 8),
+                                    Padding(
+                                      padding: EdgeInsets.all(12),
+                                      child: SizedBox.square(
+                                        dimension: 18,
+                                        child: CircularProgressIndicator(
+                                            strokeWidth: 2),
+                                      ),
+                                    ),
+                                  ],
+                                )));
+                      }
+                      final m = messages[i];
+                      final bubble = Container(
+                        constraints: const BoxConstraints(maxWidth: 300),
+                        margin: const EdgeInsets.only(bottom: 10),
+                        padding: const EdgeInsets.all(13),
+                        decoration: BoxDecoration(
+                          color: m.user ? ink : Colors.white,
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(m.text,
+                                style: TextStyle(
+                                    color: m.user ? Colors.white : ink,
+                                    height: 1.45)),
+                            if (m.sources.isNotEmpty) ...[
+                              const SizedBox(height: 8),
+                              Text('Sources: ${m.sources.join(', ')}',
+                                  style: TextStyle(
+                                      color: m.user ? Colors.white70 : muted,
+                                      fontSize: 11))
+                            ]
+                          ],
+                        ),
+                      );
+                      return Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 4),
+                        child: Row(
+                          mainAxisAlignment: m.user
+                              ? MainAxisAlignment.end
+                              : MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            if (!m.user) ...[
+                              const _TomoAvatar(size: 30),
+                              const SizedBox(width: 8),
+                            ],
+                            Flexible(child: bubble),
+                          ],
+                        ),
+                      );
                     })),
         SafeArea(
             top: false,
