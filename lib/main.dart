@@ -1,7 +1,9 @@
 import 'dart:async';
+import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'tomo_api.dart';
@@ -220,6 +222,8 @@ class _TomoHomeState extends State<TomoHome> {
   int tab = 0;
   int unread = 0;
   Timer? poll;
+  Set<int>? knownNotificationIds;
+  TomoNotification? foregroundAlert;
   @override
   void initState() {
     super.initState();
@@ -230,8 +234,29 @@ class _TomoHomeState extends State<TomoHome> {
   Future<void> refreshUnread() async {
     try {
       final list = await widget.api.getNotifications();
-      if (mounted) setState(() => unread = list.where((n) => !n.isRead).length);
+      if (!mounted) return;
+      final currentIds = list.map((n) => n.id).toSet();
+      final freshAlerts = knownNotificationIds == null
+          ? <TomoNotification>[]
+          : list.where((n) => !n.isRead && !knownNotificationIds!.contains(n.id)).toList();
+      final fresh = freshAlerts.isEmpty ? null : freshAlerts.first;
+      setState(() {
+        unread = list.where((n) => !n.isRead).length;
+        knownNotificationIds = currentIds;
+        if (fresh != null) foregroundAlert = fresh;
+      });
     } catch (_) {}
+  }
+
+  Future<void> openForegroundAlert() async {
+    final alert = foregroundAlert;
+    if (alert == null) return;
+    setState(() => foregroundAlert = null);
+    try {
+      if (!alert.isRead) await widget.api.markNotificationRead(alert.id);
+    } catch (_) {}
+    await refreshUnread();
+    if (mounted) setState(() => tab = 1);
   }
 
   @override
@@ -250,14 +275,41 @@ class _TomoHomeState extends State<TomoHome> {
                   MaterialPageRoute(builder: (_) => const ConnectPage())),
               icon: const Icon(Icons.logout))
         ]),
-        body: IndexedStack(index: tab, children: [
+        body: Stack(children: [IndexedStack(index: tab, children: [
           AlertsPage(
               api: widget.api,
               onChanged: refreshUnread,
               onJobs: () => setState(() => tab = 1)),
           JobsPage(api: widget.api),
           AssistantPage(api: widget.api)
-        ]),
+        ]), if (foregroundAlert != null) Positioned(
+          top: 8, left: 12, right: 12,
+          child: Material(
+            elevation: 8,
+            borderRadius: BorderRadius.circular(16),
+            color: Colors.white,
+            child: InkWell(
+              borderRadius: BorderRadius.circular(16),
+              onTap: openForegroundAlert,
+              child: Padding(
+                padding: const EdgeInsets.all(14),
+                child: Row(children: [
+                  const CircleAvatar(backgroundColor: aquaSoft,
+                    child: Icon(Icons.work_outline, color: Color(0xFF397C74))),
+                  const SizedBox(width: 12),
+                  Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min, children: [
+                    Text(foregroundAlert!.title, style: const TextStyle(fontWeight: FontWeight.w700, color: ink)),
+                    Text(foregroundAlert!.message, maxLines: 2, overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(color: muted, fontSize: 13)),
+                  ])),
+                  IconButton(onPressed: () => setState(() => foregroundAlert = null),
+                    icon: const Icon(Icons.close, size: 18)),
+                ]),
+              ),
+            ),
+          ),
+        )]),
         bottomNavigationBar: NavigationBar(
             selectedIndex: tab,
             onDestinationSelected: (i) => setState(() => tab = i),
@@ -410,14 +462,14 @@ class _AlertsPageState extends State<AlertsPage> {
                       child: Padding(
                           padding: EdgeInsets.all(36),
                           child: CircularProgressIndicator()))
-                else if (snap.data!.isEmpty)
+                else if (snap.data!.where((n) => !n.isRead).isEmpty)
                   const EmptyPanel(
                       icon: Icons.notifications_none,
                       title: 'You’re all caught up',
                       message:
                           'When Tomo finds new jobs, you’ll see them here.')
                 else
-                  ...snap.data!.map((n) =>
+                  ...snap.data!.where((n) => !n.isRead).map((n) =>
                       NotificationCard(notification: n, onTap: () => tap(n)))
               ])));
 }
@@ -788,26 +840,111 @@ class AssistantPage extends StatefulWidget {
 class _AssistantPageState extends State<AssistantPage> {
   final input = TextEditingController();
   final scroll = ScrollController();
-  final messages = <_ChatMessage>[];
-  int? conversationId;
+  final conversations = <_ChatConversation>[];
+  int currentConversation = -1;
   bool sending = false;
+  bool historyLoaded = false;
+
+  List<_ChatMessage> get messages => currentConversation < 0
+      ? const <_ChatMessage>[]
+      : conversations[currentConversation].messages;
+
+  int? get conversationId => currentConversation < 0
+      ? null
+      : conversations[currentConversation].conversationId;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadHistory();
+  }
+
+  Future<void> _loadHistory() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final saved = prefs.getStringList(_historyKey) ?? const [];
+      conversations.addAll(saved.map(_ChatConversation.decode));
+      if (conversations.isNotEmpty) currentConversation = 0;
+    } catch (_) {}
+    if (mounted) setState(() => historyLoaded = true);
+  }
+
+  Future<void> _saveHistory() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setStringList(_historyKey,
+          conversations.map((conversation) => conversation.encode()).toList());
+    } catch (_) {}
+  }
+
+  String get _historyKey => 'tomo_assistant_history_${widget.api.username}';
+
+  void _newChat() {
+    setState(() {
+      conversations.insert(0, _ChatConversation());
+      currentConversation = 0;
+    });
+    _saveHistory();
+    if (scroll.hasClients) scroll.jumpTo(0);
+  }
+
+  Future<void> _showHistory() async {
+    final selected = await showModalBottomSheet<int>(
+      context: context,
+      showDragHandle: true,
+      builder: (context) => SafeArea(
+        child: SizedBox(height: 420, child: Column(children: [
+          const Padding(padding: EdgeInsets.fromLTRB(20, 4, 20, 12),
+            child: Align(alignment: Alignment.centerLeft, child: Text('Chat history',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: ink)))),
+          Expanded(child: conversations.isEmpty
+            ? const Center(child: Text('Your conversations will appear here.', style: TextStyle(color: muted)))
+            : ListView.builder(itemCount: conversations.length, itemBuilder: (context, index) {
+                final conversation = conversations[index];
+                return ListTile(
+                  leading: const Icon(Icons.chat_bubble_outline, color: muted),
+                  title: Text(conversation.title, maxLines: 1, overflow: TextOverflow.ellipsis),
+                  selected: index == currentConversation,
+                  onTap: () => Navigator.pop(context, index),
+                );
+              })),
+        ])),
+      ),
+    );
+    if (selected != null && mounted) {
+      setState(() => currentConversation = selected);
+      _scrollDown();
+    }
+  }
+
   Future<void> send() async {
     final text = input.text.trim();
-    if (text.isEmpty || sending) return;
+    if (text.isEmpty || sending || !historyLoaded) return;
     input.clear();
     setState(() {
-      messages.add(_ChatMessage(text, true));
+      if (currentConversation < 0) {
+        conversations.insert(0, _ChatConversation());
+        currentConversation = 0;
+      }
+      conversations[currentConversation].messages.add(_ChatMessage(text, true));
+      conversations[currentConversation].title = text;
       sending = true;
     });
+    final activeConversation = conversations[currentConversation];
+    await _saveHistory();
     _scrollDown();
     try {
-      final reply = await widget.api.sendAssistantMessage(text, conversationId);
-      conversationId = reply.conversationId;
-      setState(() => messages
-          .add(_ChatMessage(reply.answer, false, sources: reply.sources)));
+      final reply = await widget.api.sendAssistantMessage(text, activeConversation.conversationId);
+      if (!mounted) return;
+      setState(() {
+        activeConversation.conversationId = reply.conversationId;
+        activeConversation.messages.add(_ChatMessage(reply.answer, false, sources: reply.sources));
+      });
+      await _saveHistory();
     } on TomoApiException catch (e) {
-      setState(() => messages.add(_ChatMessage(
+      if (mounted) setState(() => activeConversation.messages.add(_ChatMessage(
           'I couldn’t reach the Tomo assistant: ${e.message}', false)));
+      await _saveHistory();
     } finally {
       if (mounted) {
         setState(() => sending = false);
@@ -850,10 +987,16 @@ class _AssistantPageState extends State<AssistantPage> {
                             color: ink)),
                     Text('Ask about jobs, applications, or your next steps.',
                         style: TextStyle(color: muted, fontSize: 12))
-                  ]))
+                  ])),
+              IconButton(tooltip: 'Chat history', onPressed: _showHistory,
+                icon: const Icon(Icons.history, color: ink)),
+              IconButton(tooltip: 'New chat', onPressed: _newChat,
+                icon: const Icon(Icons.add_comment_outlined, color: ink)),
             ])),
         Expanded(
-            child: messages.isEmpty
+            child: !historyLoaded
+                ? const Center(child: CircularProgressIndicator())
+                : messages.isEmpty
                 ? const Center(
                     child: EmptyPanel(
                         icon: Icons.chat_bubble_outline,
@@ -943,7 +1086,8 @@ class _AssistantPageState extends State<AssistantPage> {
                           textInputAction: TextInputAction.send,
                           onSubmitted: (_) => send(),
                           decoration: InputDecoration(
-                              hintText: 'Message your assistant…',
+                          hintText: 'Message your assistant…',
+                          enabled: historyLoaded,
                               filled: true,
                               fillColor: Colors.white,
                               border: OutlineInputBorder(
@@ -964,6 +1108,39 @@ class _ChatMessage {
   final String text;
   final bool user;
   final List<String> sources;
+}
+
+class _ChatConversation {
+  _ChatConversation({this.conversationId, this.title = 'New chat', List<_ChatMessage>? messages})
+      : messages = messages ?? <_ChatMessage>[];
+
+  int? conversationId;
+  String title;
+  final List<_ChatMessage> messages;
+
+  String encode() => jsonEncode({
+        'conversationId': conversationId,
+        'title': title,
+        'messages': messages.map((message) => {
+              'text': message.text,
+              'user': message.user,
+              'sources': message.sources,
+            }).toList(),
+      });
+
+  factory _ChatConversation.decode(String value) {
+    final json = jsonDecode(value) as Map<String, dynamic>;
+    final rawMessages = json['messages'] as List? ?? const [];
+    return _ChatConversation(
+      conversationId: json['conversationId'] is num ? (json['conversationId'] as num).toInt() : null,
+      title: json['title']?.toString() ?? 'New chat',
+      messages: rawMessages.whereType<Map>().map((message) => _ChatMessage(
+        message['text']?.toString() ?? '',
+        message['user'] == true,
+        sources: (message['sources'] as List? ?? const []).map((source) => source.toString()).toList(),
+      )).toList(),
+    );
+  }
 }
 
 class _Tag extends StatelessWidget {
