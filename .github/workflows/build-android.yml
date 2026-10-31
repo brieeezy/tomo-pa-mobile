@@ -21,13 +21,19 @@ jobs:
           cache: true
       - name: Generate Android project files
         run: flutter create --platforms=android --org com.tomo --project-name tomo_mobile .
+      - name: Install SVG renderer
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin
       - name: Apply Tomo Android branding
         run: |
           sed -i 's/android:label="tomo_mobile"/android:label="Tomo"/' android/app/src/main/AndroidManifest.xml
           for spec in mdpi:48 hdpi:72 xhdpi:96 xxhdpi:144 xxxhdpi:192; do
             density="${spec%%:*}"
             size="${spec##*:}"
-            install -D "assets/launcher-${size}.png" "android/app/src/main/res/mipmap-${density}/ic_launcher.png"
+            rsvg-convert --width "$size" --height "$size" \
+              --output "android/app/src/main/res/mipmap-${density}/ic_launcher.png" \
+              assets/brand/tomo-logo.svg
           done
           rm -rf android/app/src/main/res/mipmap-anydpi-v26
       - name: Build installable APK

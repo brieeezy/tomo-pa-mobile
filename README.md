@@ -30,4 +30,4 @@ flutter pub get
 flutter build apk --release
 ```
 
-The APK will be at `build/app/outputs/flutter-apk/app-release.apk`. The GitHub Actions workflow also builds an APK on pushes to `main` or a manual run and publishes it as the `tomo-android-apk` artifact.
+The APK will be at `build/app/outputs/flutter-apk/app-release.apk`. The GitHub Actions workflow renders the Android launcher icon from `assets/brand/tomo-logo.svg`, builds an APK on pushes to `main` or a manual run, and publishes it as the `tomo-android-apk` artifact.
