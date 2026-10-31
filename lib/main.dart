@@ -1,14 +1,17 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'tomo_api.dart';
 
-const green = Color(0xFF55733E);
-const ink = Color(0xFF263126);
-const muted = Color(0xFF777F73);
-const paper = Color(0xFFF6F7F3);
+const brand = Color(0xFFFF8811);
+const ink = Color(0xFF392F5A);
+const muted = Color(0xFF746F80);
+const paper = Color(0xFFFFF8F0);
+const aqua = Color(0xFF9DD9D2);
+const aquaSoft = Color(0xFFE8F7F5);
 
 // Temporary development credentials, matching the Tomo web app defaults.
 const tomoUsername =
@@ -25,9 +28,69 @@ class TomoApp extends StatelessWidget {
         title: 'Tomo',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: green),
-            scaffoldBackgroundColor: paper,
-            useMaterial3: true),
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: brand,
+            primary: brand,
+            secondary: aqua,
+            surface: Colors.white,
+            error: const Color(0xFFB43F34),
+          ),
+          scaffoldBackgroundColor: paper,
+          fontFamily: 'DM Sans',
+          textTheme: const TextTheme(
+            displayLarge: TextStyle(fontFamily: 'Manrope'),
+            displayMedium: TextStyle(fontFamily: 'Manrope'),
+            displaySmall: TextStyle(fontFamily: 'Manrope'),
+            headlineLarge: TextStyle(fontFamily: 'Manrope', color: ink),
+            headlineMedium: TextStyle(fontFamily: 'Manrope', color: ink),
+            headlineSmall: TextStyle(fontFamily: 'Manrope', color: ink),
+            titleLarge: TextStyle(fontFamily: 'Manrope', color: ink),
+            titleMedium: TextStyle(color: ink),
+            titleSmall: TextStyle(color: ink),
+            bodyLarge: TextStyle(color: ink),
+            bodyMedium: TextStyle(color: ink),
+            bodySmall: TextStyle(color: muted),
+            labelLarge: TextStyle(fontWeight: FontWeight.w700),
+          ),
+          appBarTheme: const AppBarTheme(
+            backgroundColor: paper,
+            foregroundColor: ink,
+            surfaceTintColor: Colors.transparent,
+          ),
+          navigationBarTheme: NavigationBarThemeData(
+            indicatorColor: aquaSoft,
+            labelTextStyle: WidgetStateProperty.all(
+              const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
+            ),
+          ),
+          cardTheme: CardThemeData(
+            color: Colors.white,
+            elevation: 0,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(14),
+              side: const BorderSide(color: Color(0xFFE9E2D9)),
+            ),
+          ),
+          inputDecorationTheme: InputDecorationTheme(
+            labelStyle: const TextStyle(color: muted),
+            hintStyle: const TextStyle(color: muted),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+              borderSide: const BorderSide(color: brand, width: 1.5),
+            ),
+          ),
+          filledButtonTheme: FilledButtonThemeData(
+            style: FilledButton.styleFrom(
+              backgroundColor: brand,
+              foregroundColor: Colors.white,
+              textStyle: const TextStyle(fontWeight: FontWeight.w700),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+          ),
+          useMaterial3: true,
+        ),
         home: TomoHome(
             api: TomoApi(
                 baseUrl: defaultTomoApiUrl,
@@ -202,11 +265,12 @@ class _GuestHomeState extends State<GuestHome> {
                     width: double.infinity,
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
-                        color: const Color(0xFFEAF0E4),
+                        color: aquaSoft,
                         borderRadius: BorderRadius.circular(12)),
                     child: const Text('Guest preview · Live Tomo data is off',
                         style: TextStyle(
-                            color: green, fontWeight: FontWeight.w600))),
+                            color: const Color(0xFF397C74),
+                            fontWeight: FontWeight.w600))),
                 Expanded(child: pages[tab]),
                 SizedBox(
                     width: double.infinity,
@@ -245,7 +309,7 @@ class _GuestFeature extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Center(
           child: Column(mainAxisSize: MainAxisSize.min, children: [
-        Icon(icon, color: green, size: 44),
+        Icon(icon, color: brand, size: 44),
         const SizedBox(height: 14),
         Text(title,
             textAlign: TextAlign.center,
@@ -326,31 +390,16 @@ class _TomoHomeState extends State<TomoHome> {
 class BrandMark extends StatelessWidget {
   const BrandMark({super.key});
   @override
-  Widget build(BuildContext context) =>
-      Row(mainAxisSize: MainAxisSize.min, children: [
-        Container(
-            width: 34,
-            height: 34,
-            decoration: BoxDecoration(
-                color: green, borderRadius: BorderRadius.circular(10)),
-            alignment: Alignment.center,
-            child: const Text('t',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w900,
-                    fontSize: 24,
-                    height: 1))),
-        const SizedBox(width: 9),
-        const Text('tomo',
-            style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w800,
-                color: ink,
-                letterSpacing: -.7)),
-        const Text('.',
-            style: TextStyle(
-                fontSize: 22, fontWeight: FontWeight.w900, color: green))
-      ]);
+  Widget build(BuildContext context) => Semantics(
+        label: 'Tomo logo',
+        image: true,
+        child: SvgPicture.asset(
+          'assets/brand/tomo-logo.svg',
+          width: 38,
+          height: 38,
+          fit: BoxFit.contain,
+        ),
+      );
 }
 
 class _BadgeIcon extends StatelessWidget {
@@ -370,7 +419,7 @@ class _BadgeIcon extends StatelessWidget {
                   constraints:
                       const BoxConstraints(minWidth: 17, minHeight: 17),
                   decoration: const BoxDecoration(
-                      color: Color(0xFFCE6D53), shape: BoxShape.circle),
+                      color: brand, shape: BoxShape.circle),
                   alignment: Alignment.center,
                   child: Text(count > 9 ? '9+' : '$count',
                       style: const TextStyle(
@@ -467,7 +516,7 @@ class NotificationCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final fresh = notification.type.toUpperCase().contains('JOB');
     return Card(
-        color: notification.isRead ? Colors.white : const Color(0xFFF9FCF6),
+        color: notification.isRead ? Colors.white : aquaSoft,
         margin: const EdgeInsets.only(bottom: 10),
         child: InkWell(
             borderRadius: BorderRadius.circular(12),
@@ -478,12 +527,12 @@ class NotificationCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       CircleAvatar(
-                          backgroundColor: const Color(0xFFEAF0E4),
+                          backgroundColor: aquaSoft,
                           child: Icon(
                               fresh
                                   ? Icons.work_outline
                                   : Icons.notifications_none,
-                              color: green)),
+                              color: const Color(0xFF397C74))),
                       const SizedBox(width: 12),
                       Expanded(
                           child: Column(
@@ -500,7 +549,7 @@ class NotificationCard extends StatelessWidget {
                                     width: 8,
                                     height: 8,
                                     decoration: const BoxDecoration(
-                                        color: green, shape: BoxShape.circle))
+                                        color: brand, shape: BoxShape.circle))
                             ]),
                             const SizedBox(height: 5),
                             Text(notification.message,
@@ -511,7 +560,7 @@ class NotificationCard extends StatelessWidget {
                                   padding: EdgeInsets.only(top: 8),
                                   child: Text('View matching jobs  →',
                                       style: TextStyle(
-                                          color: green,
+                                          color: const Color(0xFF397C74),
                                           fontWeight: FontWeight.w700))),
                             const SizedBox(height: 7),
                             Text(_date(notification.createdAt),
@@ -641,7 +690,7 @@ class JobCard extends StatelessWidget {
                       if (job.payRange.isNotEmpty)
                         Text(job.payRange,
                             style: const TextStyle(
-                                color: green,
+                                color: const Color(0xFF397C74),
                                 fontWeight: FontWeight.w700,
                                 fontSize: 12))
                     ]),
@@ -652,7 +701,7 @@ class JobCard extends StatelessWidget {
                       const Spacer(),
                       const Text('View details  →',
                           style: TextStyle(
-                              color: green,
+                              color: const Color(0xFF397C74),
                               fontWeight: FontWeight.w700,
                               fontSize: 12))
                     ])
@@ -789,8 +838,8 @@ class _AssistantPageState extends State<AssistantPage> {
             padding: const EdgeInsets.fromLTRB(20, 18, 20, 12),
             child: Row(children: [
               const CircleAvatar(
-                  backgroundColor: Color(0xFFEAF0E4),
-                  child: Icon(Icons.auto_awesome, color: green)),
+                  backgroundColor: aquaSoft,
+                  child: Icon(Icons.auto_awesome, color: Color(0xFF397C74))),
               const SizedBox(width: 12),
               const Expanded(
                   child: Column(
@@ -836,7 +885,7 @@ class _AssistantPageState extends State<AssistantPage> {
                               margin: const EdgeInsets.only(bottom: 10),
                               padding: const EdgeInsets.all(13),
                               decoration: BoxDecoration(
-                                  color: m.user ? green : Colors.white,
+                                  color: m.user ? ink : Colors.white,
                                   borderRadius: BorderRadius.circular(16)),
                               child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -914,7 +963,7 @@ class EmptyPanel extends StatelessWidget {
   Widget build(BuildContext context) => Padding(
       padding: const EdgeInsets.symmetric(vertical: 35, horizontal: 18),
       child: Column(children: [
-        Icon(icon, size: 38, color: green),
+        Icon(icon, size: 38, color: brand),
         const SizedBox(height: 12),
         Text(title,
             style: const TextStyle(
