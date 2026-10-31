@@ -108,6 +108,7 @@ class _ConnectPageState extends State<ConnectPage> {
   final username = TextEditingController();
   final password = TextEditingController();
   bool busy = false;
+  bool showPassword = false;
   String? error;
 
   Future<void> connect() async {
@@ -185,10 +186,15 @@ class _ConnectPageState extends State<ConnectPage> {
                             const SizedBox(height: 12),
                             TextField(
                                 controller: password,
-                                obscureText: true,
-                                decoration: const InputDecoration(
+                                obscureText: !showPassword,
+                                decoration: InputDecoration(
                                     labelText: 'Password',
-                                    border: OutlineInputBorder()),
+                                    border: const OutlineInputBorder(),
+                                    suffixIcon: IconButton(
+                                      tooltip: showPassword ? 'Hide password' : 'Show password',
+                                      onPressed: () => setState(() => showPassword = !showPassword),
+                                      icon: Icon(showPassword ? Icons.visibility_off : Icons.visibility),
+                                    )),
                                 onSubmitted: (_) => connect()),
                             if (error != null)
                               Padding(
@@ -235,15 +241,13 @@ class _TomoHomeState extends State<TomoHome> {
     try {
       final list = await widget.api.getNotifications();
       if (!mounted) return;
-      final currentIds = list.map((n) => n.id).toSet();
-      final freshAlerts = knownNotificationIds == null
+      final fresh = knownNotificationIds == null
           ? <TomoNotification>[]
           : list.where((n) => !n.isRead && !knownNotificationIds!.contains(n.id)).toList();
-      final fresh = freshAlerts.isEmpty ? null : freshAlerts.first;
       setState(() {
         unread = list.where((n) => !n.isRead).length;
-        knownNotificationIds = currentIds;
-        if (fresh != null) foregroundAlert = fresh;
+        knownNotificationIds = list.map((n) => n.id).toSet();
+        if (fresh.isNotEmpty) foregroundAlert = fresh.first;
       });
     } catch (_) {}
   }
@@ -270,7 +274,7 @@ class _TomoHomeState extends State<TomoHome> {
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(title: const BrandMark(), actions: [
           IconButton(
-              tooltip: 'Disconnect',
+              tooltip: 'Log Out',
               onPressed: () => Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (_) => const ConnectPage())),
               icon: const Icon(Icons.logout))
@@ -285,9 +289,8 @@ class _TomoHomeState extends State<TomoHome> {
         ]), if (foregroundAlert != null) Positioned(
           top: 8, left: 12, right: 12,
           child: Material(
-            elevation: 8,
+            elevation: 8, color: Colors.white,
             borderRadius: BorderRadius.circular(16),
-            color: Colors.white,
             child: InkWell(
               borderRadius: BorderRadius.circular(16),
               onTap: openForegroundAlert,
@@ -303,7 +306,7 @@ class _TomoHomeState extends State<TomoHome> {
                     Text(foregroundAlert!.message, maxLines: 2, overflow: TextOverflow.ellipsis,
                       style: const TextStyle(color: muted, fontSize: 13)),
                   ])),
-                  IconButton(onPressed: () => setState(() => foregroundAlert = null),
+                  IconButton(tooltip: 'Dismiss', onPressed: () => setState(() => foregroundAlert = null),
                     icon: const Icon(Icons.close, size: 18)),
                 ]),
               ),
@@ -356,7 +359,7 @@ class _TomoAvatar extends StatelessWidget {
           decoration: BoxDecoration(
             color: aquaSoft,
             shape: BoxShape.circle,
-            border: Border.all(color: const Color.fromRGBO(91, 172, 159, 1)),
+            border: Border.all(color: const Color.fromRGBO(223, 242, 239, 1)),
           ),
           child: Padding(
             padding: EdgeInsets.all(size * 0.04),
@@ -849,21 +852,21 @@ class _AssistantPageState extends State<AssistantPage> {
       ? const <_ChatMessage>[]
       : conversations[currentConversation].messages;
 
-  int? get conversationId => currentConversation < 0
-      ? null
-      : conversations[currentConversation].conversationId;
-
   @override
   void initState() {
     super.initState();
     _loadHistory();
   }
 
+  String get historyKey => 'tomo_assistant_history_${widget.api.username}';
+
   Future<void> _loadHistory() async {
     try {
       final prefs = await SharedPreferences.getInstance();
-      final saved = prefs.getStringList(_historyKey) ?? const [];
-      conversations.addAll(saved.map(_ChatConversation.decode));
+      final saved = prefs.getStringList(historyKey) ?? const <String>[];
+      for (final value in saved) {
+        try { conversations.add(_ChatConversation.decode(value)); } catch (_) {}
+      }
       if (conversations.isNotEmpty) currentConversation = 0;
     } catch (_) {}
     if (mounted) setState(() => historyLoaded = true);
@@ -872,44 +875,31 @@ class _AssistantPageState extends State<AssistantPage> {
   Future<void> _saveHistory() async {
     try {
       final prefs = await SharedPreferences.getInstance();
-      await prefs.setStringList(_historyKey,
-          conversations.map((conversation) => conversation.encode()).toList());
+      await prefs.setStringList(historyKey, conversations.map((c) => c.encode()).toList());
     } catch (_) {}
   }
 
-  String get _historyKey => 'tomo_assistant_history_${widget.api.username}';
-
   void _newChat() {
-    setState(() {
-      conversations.insert(0, _ChatConversation());
-      currentConversation = 0;
-    });
+    setState(() { conversations.insert(0, _ChatConversation()); currentConversation = 0; });
     _saveHistory();
-    if (scroll.hasClients) scroll.jumpTo(0);
   }
 
   Future<void> _showHistory() async {
     final selected = await showModalBottomSheet<int>(
       context: context,
       showDragHandle: true,
-      builder: (context) => SafeArea(
-        child: SizedBox(height: 420, child: Column(children: [
-          const Padding(padding: EdgeInsets.fromLTRB(20, 4, 20, 12),
-            child: Align(alignment: Alignment.centerLeft, child: Text('Chat history',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: ink)))),
-          Expanded(child: conversations.isEmpty
-            ? const Center(child: Text('Your conversations will appear here.', style: TextStyle(color: muted)))
-            : ListView.builder(itemCount: conversations.length, itemBuilder: (context, index) {
-                final conversation = conversations[index];
-                return ListTile(
-                  leading: const Icon(Icons.chat_bubble_outline, color: muted),
-                  title: Text(conversation.title, maxLines: 1, overflow: TextOverflow.ellipsis),
-                  selected: index == currentConversation,
-                  onTap: () => Navigator.pop(context, index),
-                );
-              })),
-        ])),
-      ),
+      builder: (context) => SafeArea(child: SizedBox(height: 420, child: Column(children: [
+        const Padding(padding: EdgeInsets.all(16), child: Align(alignment: Alignment.centerLeft,
+          child: Text('Chat history', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: ink)))),
+        Expanded(child: conversations.isEmpty
+          ? const Center(child: Text('Your conversations will appear here.', style: TextStyle(color: muted)))
+          : ListView.builder(itemCount: conversations.length, itemBuilder: (context, index) => ListTile(
+              leading: const Icon(Icons.chat_bubble_outline),
+              title: Text(conversations[index].title, maxLines: 1, overflow: TextOverflow.ellipsis),
+              selected: index == currentConversation,
+              onTap: () => Navigator.pop(context, index),
+            ))),
+      ]))),
     );
     if (selected != null && mounted) {
       setState(() => currentConversation = selected);
@@ -1086,8 +1076,8 @@ class _AssistantPageState extends State<AssistantPage> {
                           textInputAction: TextInputAction.send,
                           onSubmitted: (_) => send(),
                           decoration: InputDecoration(
-                          hintText: 'Message your assistant…',
-                          enabled: historyLoaded,
+                              hintText: 'Message your assistant…',
+                              enabled: historyLoaded,
                               filled: true,
                               fillColor: Colors.white,
                               border: OutlineInputBorder(
@@ -1113,7 +1103,6 @@ class _ChatMessage {
 class _ChatConversation {
   _ChatConversation({this.conversationId, this.title = 'New chat', List<_ChatMessage>? messages})
       : messages = messages ?? <_ChatMessage>[];
-
   int? conversationId;
   String title;
   final List<_ChatMessage> messages;
@@ -1121,11 +1110,7 @@ class _ChatConversation {
   String encode() => jsonEncode({
         'conversationId': conversationId,
         'title': title,
-        'messages': messages.map((message) => {
-              'text': message.text,
-              'user': message.user,
-              'sources': message.sources,
-            }).toList(),
+        'messages': messages.map((m) => {'text': m.text, 'user': m.user, 'sources': m.sources}).toList(),
       });
 
   factory _ChatConversation.decode(String value) {
@@ -1134,10 +1119,9 @@ class _ChatConversation {
     return _ChatConversation(
       conversationId: json['conversationId'] is num ? (json['conversationId'] as num).toInt() : null,
       title: json['title']?.toString() ?? 'New chat',
-      messages: rawMessages.whereType<Map>().map((message) => _ChatMessage(
-        message['text']?.toString() ?? '',
-        message['user'] == true,
-        sources: (message['sources'] as List? ?? const []).map((source) => source.toString()).toList(),
+      messages: rawMessages.whereType<Map>().map((m) => _ChatMessage(
+        m['text']?.toString() ?? '', m['user'] == true,
+        sources: (m['sources'] as List? ?? const []).map((source) => source.toString()).toList(),
       )).toList(),
     );
   }
