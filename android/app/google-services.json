@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "638212073060",
+    "project_id": "tomoai-2ae69",
+    "storage_bucket": "tomoai-2ae69.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638212073060:android:eea92b923cc6ef94466171",
+        "android_client_info": {
+          "package_name": "site.tomo.aubrey.tomo_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnd8tz9Zw3836Vf5iqyfyzTwCoqqONWK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,6 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'firebase_options.dart';
+import 'package:flutter/foundation.dart'
+    show kIsWeb;
 
 import 'tomo_api.dart';
 
@@ -16,7 +21,40 @@ const aqua = Color(0xFF9DD9D2);
 const aquaSoft = Color(0xFFE8F7F5);
 const jasmine = Color(0xFFF4D06F);
 
-void main() => runApp(const TomoApp());
+
+@pragma('vm:entry-point')
+Future<void> firebaseBackgroundHandler(RemoteMessage message) async {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  print('Background notification: ${message.notification?.title}');
+}
+
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  ); 
+
+  FirebaseMessaging.onBackgroundMessage(
+    firebaseBackgroundHandler,
+  );
+
+  if(!kIsWeb) {
+    final settings = await FirebaseMessaging.instance.requestPermission(
+      alert: true,
+      badge: true,
+      sound: true,
+    );
+    print('User granted permission: ${settings.authorizationStatus}');
+  }
+  // Subscribe this installation to the broadcast topic.
+  await FirebaseMessaging.instance.subscribeToTopic('all_users');
+
+  runApp(const TomoApp());
+}
 
 class TomoApp extends StatelessWidget {
   const TomoApp({super.key});

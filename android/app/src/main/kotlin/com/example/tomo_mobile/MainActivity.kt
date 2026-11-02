@@ -1,4 +1,4 @@
-package com.example.tomo_mobile
+package site.tomo.aubrey.tomo_mobile
 
 import io.flutter.embedding.android.FlutterActivity
 
